@@ -1,680 +1,706 @@
-body, html {
-    font-family: "Poppins", sans-serif;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    color: #eb839b;
-    font-family: "Gochi Hand", cursive;
-    font-size: 937.5%;
-    margin-top: 0x;
-    margin-bottom: 0.1px;
-  }
-  
-  h2 {
-    color: #eb839b;
-    font-size: 250%;
-    margin: 1% 0;
-  }
-  
-  h3 {
-    color: #e76583;
-    font-size: 160%;
-  }
-  
-  p {
-    color: rgb(58, 57, 57);
-    font-size: 125%;
-  }
-  
-  hr {
-    border: dotted #f1dde2 6px;
-    border-bottom: none;
-    margin: 0 35%;
-  }
-  
-  span {
-    color: rgb(58, 57, 57);
-  }
-  
-  nav {
-    display: inline-block;
-    justify-content: center;
-  }
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
 
-  a {
-    color: #eb839b;
-    text-decoration: none;
-  }
-  
-  .skillRow p, .contactMe p, .info-table p, .journalsDivsLeft p, .journalsDivsRight p, .journalsSummary p {
-    margin-bottom: 3%;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  /* navigation menu styles */
-  .header {
-    position: fixed;
-    box-shadow: 0 -6px 10px 5px rgb(58, 57, 57);
-    width: 100%;
-    height: 7%;
-    background-color: #ffffff;
-  }
+h1 {
+  color: #eb839b;
+  font-family: "Gochi Hand", cursive;
+  font-size: 937.5%;
+  margin-top: 0x;
+  margin-bottom: 0.1px;
+}
 
-  .navLinks {
-    line-height: 0.6;
-    padding: 28px 0;
-    background-color: none;
-  }
-  
-  .navLinks li {
-    display: inline-block;
-    margin: 0 15px;
-    background-color: none;
-    position: relative;
-  }
-  
-  .navLinks li a {
-    text-decoration: none;
-    padding: 5px 0;
-    position: relative;
-    background-color: none;
-  }
+h2 {
+  color: #eb839b;
+  font-size: 250%;
+  margin: 1% 0;
+}
 
-  .navLinks li a::after {
-    content: "";
-    background: #eb839b;
-    width: 0;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.5s;
-  }
-  
-  .navLinks li a:hover::after {
-    width: 100%;
-    background-color: none;
-  }
+h3 {
+  color: #e76583;
+  font-size: 160%;
+}
 
-  .navLinks li ul {
-    display: none;
-    position: absolute;
-    background-color: white;
-    padding: 30px 0 12px;
-    border-radius: 0px 0px 8px 8px;
-  }
-  
-  .navLinks li:hover ul {
-    display: block;
-  }
-  
-  .dropdownMenuItems {
-    padding: 12px 0;
-    width: 90px;
-    border-radius: 5px;
-  }
-  
-  .dropdownMenuItems:hover {
-    background-color: #f3f3f3;
-  }
-  
-  .arrowDown {
-    width: 10px
-  }
+p {
+  color: rgb(58, 57, 57);
+  font-size: 125%;
+}
 
-  /* mobile menu styles */
-  .mobileMenu {
-    overflow: hidden;
-    background-color: white;
-    position: relative;
-    display: none;
-  }
+hr {
+  border: dotted #f1dde2 6px;
+  border-bottom: none;
+  margin: 0 35%;
+}
 
-  .mobileMenuLogo {
-    width: 3rem;
-    float: left;
-    padding: auto;
-  }
+span {
+  color: rgb(58, 57, 57);
+}
 
-  .mobileMenu a.icon {
-    background: white;
-    padding: auto;
-    display: none;
-    position: absolute;
-    font-size: 44px;
-    right: 0;
-    top: 0;
-  }
+nav {
+  display: inline-block;
+  justify-content: center;
+}
 
-  .mobileMenu #mobileMenuLinks {
-    display: none;
-  }
+a {
+  color: #eb839b;
+  text-decoration: none;
+}
 
- /* responsive design and media queries for navigation menu */
- @media (max-width: 108px) {
-  .mobileMenu a.icon {
-    display: none;
-  }
- }
+.skillRow p,
+.contactMe p,
+.info-table p,
+.journalsDivsLeft p,
+.journalsDivsRight p,
+.journalsSummary p {
+  margin-bottom: 3%;
+}
 
- @media (max-width: 411px) {
-  .mobileMenu a.icon {
-    padding-right: 0.5rem;
-  }
+/* navigation menu styles */
+.header {
+  position: fixed;
+  box-shadow: 0 -6px 10px 5px rgb(58, 57, 57);
+  width: 100vw;
+  height: 3rem;
+  background-color: #ffffff;
+}
 
-  .mobileMenuLogo {
-    margin-right: 60rem;
-  }
- }
+.headerMobile {
+  display: none;
+}
 
- @media (max-width: 810px) {
-  body, html {
-    overflow-x: hidden;
-  }
+.navLinks {
+  line-height: 0.6;
+  padding: 1.2rem 0;
+  background-color: none;
+}
+
+.navLinks li {
+  display: inline-block;
+  margin: 0 15px;
+  background-color: none;
+  position: relative;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  padding: 5px 0;
+  position: relative;
+  background-color: none;
+}
+
+.navLinks li a::after {
+  content: "";
+  background: #eb839b;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.navLinks li a:hover::after {
+  width: 100%;
+  background-color: none;
+}
+
+.navLinks li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 30px 0 12px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.navLinks li:hover ul {
+  display: block;
+}
+
+.dropdownMenuItems {
+  padding: 12px 0;
+  width: 90px;
+  border-radius: 5px;
+}
+
+.dropdownMenuItems:hover {
+  background-color: #f3f3f3;
+}
+
+.arrowDown {
+  width: 10px;
+}
+
+/* mobile menu styles */
+@media (max-width: 700px) {
 
   .header {
     display: none;
   }
 
-  .mobileMenu, .mobileMenu a.icon {
-    display: block;
-  }
-
-  .mobileMenuLogo {
-    float: left;
-  }
-  .mobileMenu a.icon {
-
-  }
- }
-    
- @media (max-width: 768px) {
-  .mobileMenu a.icon {
-    margin-right: 1rem;
-  }
- }
-
- /* footer styles */ 
- .footer {
-    background-color: rgb(58, 57, 57);
-    width: 100vw;
-    height: 170px;
-    margin-top: 3%;
- }
-
-  .footerLinks {
-    margin: 0 10px;
-    font-size: 120%;
-    line-height: 6;
-  }
-
-  .footerLinks:hover {
-    background-color: #f8e0c4;
-  }
-  
-  .externalLinks:hover {
-    background-color: #f8e0c4;
-  }
-
-  #copyright {
-    line-height: 0;
-    color: rgb(255, 255, 255);
-  }
-
-  /* home page styles */
- .profile p {
-    margin-bottom: 1.5%;
-  }
-
- .homeTop {
-    width: 100vw;
-    height: 52.2vw;
-    background-color: rgb(58, 57, 57);
-    padding-top: 5%;
-  }
-
-  #subtitle {
-    color: #eb839b;
-    font-size: 125%;
-    margin-bottom: 100px;
-  }
-
-  .leftCloud {
-    position: absolute;
-    right: 80%;
-    bottom: 40%;
-    width: 11%;
-  }
-  
-  .rightCloud {
-    position: absolute;
-    left: 80%;
-    top: 80%;
-    width: 11%;
-  }
-  
-  .treePic {
-    width: 50%;
-    margin-bottom: 0;
-  }
-
-  .skillRow {
-    width: 50%;
-    margin: 40px auto 40px auto;
-    text-align: left;
-  }
-
-  .noemiPic {
-    width: 12%;
-    margin-bottom: 1%;
-  }
-
-  .photoshopPic {
-    width: 15%;
-    float: left;
-    margin-right: 30px;
-  }
-  
-  .javaPic {
-    width: 15%;
-    float: right;
-    margin-left: 30px;
-  }
-  
-  .javaHead {
-    text-align: right;
-  }
-  
-  .codingPic {
-    width: 15%;
-    float: left;
-    margin-right: 30px;
-  }
-  
-  .contactMeButton {
-    background: #eb839b;
-    background-image: -webkit-linear-gradient(top, #eb839b, #e76583);
-    background-image: -moz-linear-gradient(top, #eb839b, #e76583);
-    background-image: -ms-linear-gradient(top, #eb839b, #e76583);
-    background-image: -o-linear-gradient(top, #eb839b, #e76583);
-    background-image: linear-gradient(to bottom, #eb839b, #e76583);
-    -webkit-border-radius: 11;
-    -moz-border-radius: 11;
-    border-radius: 11px;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-  }
-  
-  .contactMeButton:hover {
-    background: #f7c3cf;
-    background-image: -webkit-linear-gradient(top, #f7c3cf, #e76583);
-    background-image: -moz-linear-gradient(top, #f7c3cf, #e76583);
-    background-image: -ms-linear-gradient(top, #f7c3cf, #e76583);
-    background-image: -o-linear-gradient(top, #f7c3cf, #e76583);
-    background-image: linear-gradient(to bottom, #f7c3cf, #e76583);
-  }
-
-  /* responsive design and media queries for home page */
-  @media (max-width: 1555px) {
-
-  }
-      
-  @media (max-width: 810px) {
-    
-  }
-      
-  @media (max-width: 768px) {
-       
-  }
-
-  /* journals page styles */
-  .journals {
-    width: 100vw;
-    height: 25vw;
-    background-color: rgb(58, 57, 57);
-    padding-top: 5%;
-  }
-
-  .journals p {
-    color: white;
-  }
-
-  .modulesContainer {
-    justify-content: center;
-    display: flex;
-    margin-top: 2.5%;
-  }
-  
-  .htmlImg, .databaseImg, .uxImg {
-      width: 20%;    
-  }
-
-  .weekView {
-    margin-bottom: 0.5%;
-  }
-
-  .weekNumbers {
-    width: 60px;
-  }
-
-  .journalsContainer {
-    justify-content: center;
-    display: flex;
-    margin-bottom: 2%;
-  }
-
-  .journalsDivsLeft {
-    text-align: left;
-    width: 900px;
-    margin: auto;
-  }
-  
-  .journalsDivsRight {
-    text-align: right;
-    width: 900px;
-    margin: auto;
-  }
-  
-  .journalsImg {
-    width: 50px;
-  }
-
-  /* responsive design and media queries for journals page */
-  @media (max-width: 1555px) {
-
-  }
-    
-  @media (max-width: 810px) {
+  .headerMobile {
+  display: block;
+  position: fixed;
+  box-shadow: 0 -6px 10px 5px rgb(58, 57, 57);
+  width: 100vw;
+  height: 4rem;
+  padding-bottom: 0.4rem;
+  background-color: #ffffff;
+}
+  .mobileNavPics  {
+  width: 2rem;
   
   }
-    
-  @media (max-width: 768px) {
-     
-  }
 
-  /* curriculum page styles */
-  .cvTop {
-    width: 100vw;
-    height: 20vw;
-    background-color: rgb(58, 57, 57);
-    padding-top: 5%;
-  }
+  .navLinksMobile {
+  line-height: 0.6;
+  padding: 1.2rem 0;
+  background-color: none;
+}
 
-  .cvLeftCloud {
-    position: absolute;
-    left: 20%;
-    top: 7%;
-    width: 11%;
-  }
-  
-  .cvRightCloud {
-    position: absolute;
-    left: 67%;
-    top: 30%;
-    width: 11%;
-  }
-    
-  .tableBasicInfo {
-    text-align: left;
-    width: auto;
-    margin: 2% 25% 1.5%;
-  }
+  .navLinksMobile li {
+  display: inline-block;
+  margin: 0 15px;
+  background-color: none;
+  position: relative;
+}
 
-  .tableColumns {
-    width: 30%;
-  }
+  .navLinksMobile li a {
+  text-decoration: none;
+  padding: 5px 0;
+  position: relative;
+  background-color: none;
+}
+  .navLinksMobile li a::after {
+  content: "";
+  background: #eb839b;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
 
-  #summary {
-    width: 50%;
-    margin: 40px auto 40px auto;
-  }
+  .navLinksMobile li a:hover::after {
+  width: 100%;
+  background-color: none;
+}
 
-  .tableCv {
-    text-align: left;
-    text-indent: 1%;
-    justify-content: center;
-    margin: 2% 25%;
-  }
-  
-  .columnSize {
-    width: 150px;
-  }
-  
-  .tableRowCv {
-    color: #e76583;
-    font-weight: bold;
-  }
-  
-  .tableColumnCv {
-    background-color: #f7c3cf;
-    margin-left: 20%;
-    vertical-align: top;
-  }
-  
-  .cvPics {
-    width: 2%;
-  }
-  
-  .websites {
-    font-size: 100%;
-    margin-bottom: 1%;
-    font-weight: bold;
-    margin-right: 8%;
-  }
-  
-  .webClick:hover {
-    color: white;
-  }
+  .navLinksMobile li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 30px 0 12px;
+  border-radius: 0px 0px 8px 8px;
+}
 
-  /* responsive design and media queries for curriculum vitae page */
-  @media (max-width: 1555px) {
+  .navLinksMobile li:hover ul {
+  display: block;
+}
+}
 
-  }
-  
-  @media (max-width: 810px) {
+/* footer styles */
+.footer {
+  background-color: rgb(58, 57, 57);
+  width: 100vw;
+  height: 170px;
+  margin-top: 3%;
+}
 
-  }
-  
-  @media (max-width: 768px) {
-   
-  }
+.footerLinks {
+  margin: 0 10px;
+  font-size: 120%;
+  line-height: 6;
+}
 
-  /* contact me page styles */
-  .contactMeTop {
-    width: 100vw;
-    height: 600px;
-    background-color: rgb(58, 57, 57);
-    padding-top: 5rem;
-  }
-    
+.footerLinks:hover {
+  background-color: #f8e0c4;
+}
+
+.externalLinks:hover {
+  background-color: #f8e0c4;
+}
+
+#copyright {
+  line-height: 0;
+  color: rgb(255, 255, 255);
+}
+
+/* home page styles */
+.profile p {
+  margin-bottom: 1.5%;
+}
+
+.homeTop {
+  width: 100vw;
+  height: 52.2vw;
+  background-color: rgb(58, 57, 57);
+  padding-top: 5%;
+}
+
+#subtitle {
+  color: #eb839b;
+  font-size: 125%;
+  margin-bottom: 100px;
+}
+
+.leftCloud {
+  position: absolute;
+  right: 80%;
+  bottom: 40%;
+  width: 11%;
+}
+
+.rightCloud {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  width: 11%;
+}
+
+.treePic {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.skillRow {
+  width: 50%;
+  margin: 40px auto 40px auto;
+  text-align: left;
+}
+
+.noemiPic {
+  width: 12%;
+  margin-bottom: 1%;
+}
+
+.photoshopPic {
+  width: 15%;
+  float: left;
+  margin-right: 30px;
+}
+
+.javaPic {
+  width: 15%;
+  float: right;
+  margin-left: 30px;
+}
+
+.javaHead {
+  text-align: right;
+}
+
+.codingPic {
+  width: 15%;
+  float: left;
+  margin-right: 30px;
+}
+
+.contactMeButton {
+  background: #eb839b;
+  background-image: -webkit-linear-gradient(top, #eb839b, #e76583);
+  background-image: -moz-linear-gradient(top, #eb839b, #e76583);
+  background-image: -ms-linear-gradient(top, #eb839b, #e76583);
+  background-image: -o-linear-gradient(top, #eb839b, #e76583);
+  background-image: linear-gradient(to bottom, #eb839b, #e76583);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.contactMeButton:hover {
+  background: #f7c3cf;
+  background-image: -webkit-linear-gradient(top, #f7c3cf, #e76583);
+  background-image: -moz-linear-gradient(top, #f7c3cf, #e76583);
+  background-image: -ms-linear-gradient(top, #f7c3cf, #e76583);
+  background-image: -o-linear-gradient(top, #f7c3cf, #e76583);
+  background-image: linear-gradient(to bottom, #f7c3cf, #e76583);
+}
+
+/* responsive design and media queries for home page */
+@media (max-width: 1555px) {
+}
+
+@media (max-width: 810px) {
+}
+
+@media (max-width: 768px) {
+}
+
+/* journals page styles */
+.journals {
+  width: 100vw;
+  height: 25vw;
+  background-color: rgb(58, 57, 57);
+  padding-top: 5%;
+}
+
+.journals p {
+  color: white;
+}
+
+.modulesContainer {
+  justify-content: center;
+  display: flex;
+  margin-top: 2.5%;
+}
+
+.htmlImg,
+.databaseImg,
+.uxImg {
+  width: 20%;
+}
+
+.weekView {
+  margin-bottom: 0.5%;
+}
+
+.weekNumbers {
+  width: 60px;
+}
+
+.journalsContainer {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.journalsDivsLeft {
+  text-align: left;
+  width: 900px;
+  margin: auto;
+}
+
+.journalsDivsRight {
+  text-align: right;
+  width: 900px;
+  margin: auto;
+}
+
+.journalsImg {
+  width: 50px;
+}
+
+/* responsive design and media queries for journals page */
+@media (max-width: 1555px) {
+}
+
+@media (max-width: 810px) {
+}
+
+@media (max-width: 768px) {
+}
+
+/* curriculum page styles */
+.cvTop {
+  width: 100vw;
+  height: 20vw;
+  background-color: rgb(58, 57, 57);
+  padding-top: 5%;
+}
+
+.cvLeftCloud {
+  position: absolute;
+  left: 20%;
+  top: 7%;
+  width: 11%;
+}
+
+.cvRightCloud {
+  position: absolute;
+  left: 67%;
+  top: 30%;
+  width: 11%;
+}
+
+.tableBasicInfo {
+  text-align: left;
+  width: auto;
+  margin: 2% 25% 1.5%;
+}
+
+.tableColumns {
+  width: 30%;
+}
+
+#summary {
+  width: 50%;
+  margin: 40px auto 40px auto;
+}
+
+.tableCv {
+  text-align: left;
+  text-indent: 1%;
+  justify-content: center;
+  margin: 2% 25%;
+}
+
+.columnSize {
+  width: 150px;
+}
+
+.tableRowCv {
+  color: #e76583;
+  font-weight: bold;
+}
+
+.tableColumnCv {
+  background-color: #f7c3cf;
+  margin-left: 20%;
+  vertical-align: top;
+}
+
+.cvPics {
+  width: 2%;
+}
+
+.websites {
+  font-size: 100%;
+  margin-bottom: 1%;
+  font-weight: bold;
+  margin-right: 8%;
+}
+
+.webClick:hover {
+  color: white;
+}
+
+/* responsive design and media queries for curriculum vitae page */
+@media (max-width: 1555px) {
+}
+
+@media (max-width: 810px) {
+}
+
+@media (max-width: 768px) {
+}
+
+/* contact me page styles */
+.contactMeTop {
+  width: 100vw;
+  height: 600px;
+  background-color: rgb(58, 57, 57);
+  padding-top: 5rem;
+}
+
+.contactMeLeftCloud {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 11%;
+}
+
+.contactMeRightCloud {
+  position: absolute;
+  left: 70%;
+  top: 45%;
+  width: 11%;
+}
+
+.formStyle {
+  display: inline-block;
+  width: fit-content;
+}
+
+.nameAndSurname,
+.emailAndPhoneNumber,
+.dateAndCountry {
+  display: flex;
+  gap: 1rem;
+}
+
+.messageArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.messageStyle {
+  background-color: #eb6786;
+  width: 500px;
+  height: 200px;
+  margin: 5px;
+  border-radius: 15px;
+  resize: none;
+  border: 2px solid rgb(58, 57, 57);
+  padding: 1rem;
+}
+
+.messageStyle::placeholder {
+  padding: 0;
+}
+
+.nameAndSurnameStyle {
+  background-color: #eaa9b8;
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  padding: 0 2%;
+  border-radius: 15px;
+  border: 2px solid rgb(58, 57, 57);
+  transition: 0.3s border-color;
+}
+
+.nameAndSurnameStyle::placeholder {
+  padding: 0;
+}
+
+.emailAndPhoneNumberStyle {
+  background-color: #e98ea3;
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  padding: 0 2%;
+  border-radius: 15px;
+  border: 2px solid rgb(58, 57, 57);
+}
+
+.emailAndPhoneNumberStyle::placeholder {
+  padding: 0;
+}
+
+.dateAndCountryStyle {
+  background-color: #e77791;
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  padding: 0 1%;
+  border-radius: 15px;
+  border: 2px solid rgb(58, 57, 57);
+}
+
+.countryStyle {
+  background-color: #e77791;
+  width: 103% !important;
+  height: 54px;
+  margin: 5px;
+  padding: 0 1%;
+  border-radius: 15px;
+  border: 2px solid rgb(58, 57, 57);
+}
+
+.submitStyle {
+  background-color: #e95577;
+  width: 116px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid rgb(58, 57, 57);
+  place-self: center;
+}
+
+.submitStyle:hover {
+  background-color: #c94765;
+  cursor: pointer;
+  width: 116px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid rgb(58, 57, 57);
+}
+
+::placeholder {
+  color: rgb(58, 57, 57);
+  padding: 3%;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+select:focus,
+select:hover {
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.map {
+  padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+/* responsive design and media queries for contact me page */
+@media (max-width: 1555px) {
   .contactMeLeftCloud {
-    position: absolute;
-    left: 20%;
-    top: 10%;
-    width: 11%;
+    transition: 1s;
+    left: 5%;
   }
-  
   .contactMeRightCloud {
-    position: absolute;
-    left: 70%;
-    top: 45%;
-    width: 11%;
+    transition: 1s;
+    left: 84%;
+  }
+}
+
+@media (max-width: 810px) {
+  .contactMeLeftCloud,
+  .contactMeRightCloud {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactMeTop {
+    height: 800px;
+  }
+
+  .nameAndSurnameStyle,
+  .emailAndPhoneNumberStyle,
+  .dateAndCountryStyle,
+  .countryStyle,
+  .messageStyle {
+    width: auto !important;
   }
 
   .formStyle {
-    display: inline-block;
-    width: fit-content;
-  }
-
-  .nameAndSurname, .emailAndPhoneNumber, .dateAndCountry {
-    display: flex;
-    gap: 1rem;
-  }
-   
-  .messageArea {
     display: flex;
     flex-direction: column;
-  }
-    
-  .messageStyle {
-    background-color: #eb6786;
-    width: 500px;
-    height: 200px;
-    margin: 5px;
-    border-radius: 15px;
-    resize: none;
-    border: 2px solid rgb(58, 57, 57);
-    padding: 1rem;
-  }
-  
-  .messageStyle::placeholder {
-    padding: 0;
-  }
-
-  .nameAndSurnameStyle {
-    background-color: #eaa9b8;
     width: 100%;
-    height: 50px;
-    margin: 5px;
-    padding: 0 1%;
-    border-radius: 15px;
-    border: 2px solid rgb(58, 57, 57);
-    transition: 0.3s border-color;
-  }
-  
-  .emailAndPhoneNumberStyle {
-    background-color: #e98ea3;
-    width: 100%;
-    height: 50px;
-    margin: 5px;
-    padding: 0 1%;
-    border-radius: 15px;
-    border: 2px solid rgb(58, 57, 57);
-  }
-  
-  .dateAndCountryStyle {
-    background-color: #e77791;
-    width: 100%;
-    height: 50px;
-    margin: 5px;
-    padding: 0 1%;
-    border-radius: 15px;
-    border: 2px solid rgb(58, 57, 57);
-  }
-  
-  .countryStyle {
-    background-color: #e77791;
-    width: 103% !important;
-    height: 54px;
-    margin: 5px;
-    padding: 0 1%;
-    border-radius: 15px;
-    border: 2px solid rgb(58, 57, 57);
-  }
-  
-  .submitStyle {
-    background-color: #e95577;
-    width: 116px;
-    height: 50px;
-    margin: 5px;
-    border-radius: 25px;
-    border: 2px solid rgb(58, 57, 57);
-    place-self: center;
-  }
-  
-  .submitStyle:hover {
-    background-color: #c94765;
-    cursor: pointer;
-    width: 116px;
-    height: 50px;
-    margin: 5px;
-    border-radius: 25px;
-    border: 2px solid rgb(58, 57, 57);
   }
 
-  ::placeholder {
-    color: rgb(58, 57, 57);
-    padding: 3%;
+  .contactMeTop h3 {
+    margin: 0;
+    padding-left: 10px;
+    float: left;
   }
+  .nameAndSurname,
+  .emailAndPhoneNumber,
+  .dateAndCountry,
+  .messageArea {
+    flex-direction: column;
+    gap: 0;
+    padding-right: 1rem;
+  }
+}
 
-  input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:hover {
-    outline: none;
-    border: 2px solid rgb(255, 255, 255);
-  }
-  
-  .map {
-    padding-top: 5rem;
-    overflow-x: hidden;
-  }
+/* scroll button styles */
+#scrollToTop {
+  display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: -150px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  background: none;
+  border: none;
+}
 
+.scrollButton {
+  width: 10%;
+}
 
-  /* responsive design and media queries for contact me page */
-  @media (max-width: 1555px) {
-    .contactMeLeftCloud {
-      transition: 1s;
-      left: 5%;
-    }
-    .contactMeRightCloud {
-      transition: 1s;
-      left: 84%;
-    }
-  }
-  
-  @media (max-width: 810px) {
-    .contactMeLeftCloud, .contactMeRightCloud {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .contactMeTop {
-      height: 800px;
-    }
-  
-    .nameAndSurnameStyle, .emailAndPhoneNumberStyle, .dateAndCountryStyle, .countryStyle, .messageStyle {
-      width: auto !important;
-    }
-  
-    .formStyle {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .contactMeTop h3 {
-      margin: 0;
-      padding-left: 10px;
-      float: left;
-    }
-    .nameAndSurname, .emailAndPhoneNumber, .dateAndCountry, .messageArea {
-      flex-direction: column;
-      gap: 0;
-      padding-right: 1rem;
-    }
-  
-
-  }
-
-  /* scroll button styles */
-  #scrollToTop {
-    display: none;
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: -150px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    background: none;
-    border: none;
-  }
-  
+@media (max-width: 700px) {
   .scrollButton {
-      width: 15%; 
+     display: none;
   }
+}

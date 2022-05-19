@@ -15,19 +15,15 @@
   <body>
 
     <button onclick="topFunction()" id="scrollToTop" title="Go to top"><img class="scrollButton" src="images/scrollButton.png" alt="Scroll to top"></button>
-
-    <div class="mobileMenu">
-      <a href="#home" class="active"><img class="mobileMenuLogo" src="images/favicon.png" alt="mobile menu icon"></a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="mobileMenuLinks">
-        <a href="#journals">Journals</a>
-        <a href="#contact">Curriculum Vitae</a>
-        <a href="#contact">Contact Me</a>
-      </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+    <div class="headerMobile">
+      <nav>
+        <ul class="navLinksMobile">
+          <li><a href="index.html"><img class="mobileNavPics" src="images/home.png" alt="home button"></a></li>
+          <li><a href="journals.html"><img class="mobileNavPics" src="images/journals.png" alt="home button"></a></li>
+          <li><a href="curriculum-vitae.html"><img class="mobileNavPics" src="images/cv.png" alt="home button"></a></li>
+          <li><a href="contact-me.html"><img class="mobileNavPics" src="images/contactmepls.png" alt="home button"></a></li>
+        </ul>
+      </nav>
     </div>
 
     <div class="header">
@@ -55,7 +51,7 @@
         <h3>Get in touch!</h3>
         <img class="contactMeLeftCloud" src="images/cloud.png" alt="cloud" />
         <img class="contactMeRightCloud" src="images/cloud.png" alt="cloud" />
-        <form class="formStyle" name="contactForm" action="contact-me.html" onsubmit="return validateForm()">
+        <form class="formStyle" name="contactForm" action="contact-me.html" onsubmit="validateForm(event)">
           <div class="nameAndSurname">
             <input class="nameAndSurnameStyle" type="text" name="fname" placeholder="Name" />
             <input class="nameAndSurnameStyle" type="text" placeholder="Surname" />
