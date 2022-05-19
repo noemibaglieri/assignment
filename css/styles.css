@@ -129,13 +129,85 @@ body, html {
     width: 10px
   }
 
-  /* footer styles */ 
-  .footer {
+  /* mobile menu styles */
+  .mobileMenu {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    display: none;
+  }
+
+  .mobileMenuLogo {
+    width: 3rem;
+    float: left;
+    padding: auto;
+  }
+
+  .mobileMenu a.icon {
+    background: white;
+    padding: auto;
+    display: none;
+    position: absolute;
+    font-size: 44px;
+    right: 0;
+    top: 0;
+  }
+
+  .mobileMenu #mobileMenuLinks {
+    display: none;
+  }
+
+ /* responsive design and media queries for navigation menu */
+ @media (max-width: 108px) {
+  .mobileMenu a.icon {
+    display: none;
+  }
+ }
+
+ @media (max-width: 411px) {
+  .mobileMenu a.icon {
+    padding-right: 0.5rem;
+  }
+
+  .mobileMenuLogo {
+    margin-right: 60rem;
+  }
+ }
+
+ @media (max-width: 810px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .mobileMenu, .mobileMenu a.icon {
+    display: block;
+  }
+
+  .mobileMenuLogo {
+    float: left;
+  }
+  .mobileMenu a.icon {
+
+  }
+ }
+    
+ @media (max-width: 768px) {
+  .mobileMenu a.icon {
+    margin-right: 1rem;
+  }
+ }
+
+ /* footer styles */ 
+ .footer {
     background-color: rgb(58, 57, 57);
     width: 100vw;
     height: 170px;
     margin-top: 3%;
-  }
+ }
 
   .footerLinks {
     margin: 0 10px;
@@ -588,9 +660,7 @@ body, html {
       padding-right: 1rem;
     }
   
-    .submitStyle, .submitStyle:hover {
-      width: 100%;
-    }
+
   }
 
   /* scroll button styles */

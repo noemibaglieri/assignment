@@ -12,6 +12,15 @@ function scrollFunction() {
   }
 }
 
+function myFunction() {
+  var x = document.getElementById("mobileMenuLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera

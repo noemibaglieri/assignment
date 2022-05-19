@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
     <title>Noemi's Assignment</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +13,23 @@
   </head>
 
   <body>
+
     <button onclick="topFunction()" id="scrollToTop" title="Go to top"><img class="scrollButton" src="images/scrollButton.png" alt="Scroll to top"></button>
+
+    <div class="mobileMenu">
+      <a href="#home" class="active"><img class="mobileMenuLogo" src="images/favicon.png" alt="mobile menu icon"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="mobileMenuLinks">
+        <a href="#journals">Journals</a>
+        <a href="#contact">Curriculum Vitae</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
     <div class="header">
       <nav>
         <ul class="navLinks">
