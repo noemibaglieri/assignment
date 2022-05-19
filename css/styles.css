@@ -67,21 +67,20 @@ body, html {
     background-color: #ffffff;
   }
 
-  .navLinks   {
+  .navLinks {
     line-height: 0.6;
     padding: 28px 0;
     background-color: none;
   }
   
-  .navLinks li    {
+  .navLinks li {
     display: inline-block;
     margin: 0 15px;
     background-color: none;
     position: relative;
   }
   
-  
-  .navLinks li a  {
+  .navLinks li a {
     text-decoration: none;
     padding: 5px 0;
     position: relative;
@@ -104,7 +103,7 @@ body, html {
     background-color: none;
   }
 
-  .navLinks li ul  {
+  .navLinks li ul {
     display: none;
     position: absolute;
     background-color: white;
@@ -112,7 +111,7 @@ body, html {
     border-radius: 0px 0px 8px 8px;
   }
   
-  .navLinks li:hover ul  {
+  .navLinks li:hover ul {
     display: block;
   }
   
@@ -131,7 +130,6 @@ body, html {
   }
 
   /* footer styles */ 
-  
   .footer {
     background-color: rgb(58, 57, 57);
     width: 100vw;
@@ -252,6 +250,19 @@ body, html {
     background-image: linear-gradient(to bottom, #f7c3cf, #e76583);
   }
 
+  /* responsive design and media queries for home page */
+  @media (max-width: 1555px) {
+
+  }
+      
+  @media (max-width: 810px) {
+    
+  }
+      
+  @media (max-width: 768px) {
+       
+  }
+
   /* journals page styles */
   .journals {
     width: 100vw;
@@ -304,12 +315,39 @@ body, html {
     width: 50px;
   }
 
+  /* responsive design and media queries for journals page */
+  @media (max-width: 1555px) {
+
+  }
+    
+  @media (max-width: 810px) {
+  
+  }
+    
+  @media (max-width: 768px) {
+     
+  }
+
   /* curriculum page styles */
   .cvTop {
     width: 100vw;
     height: 20vw;
     background-color: rgb(58, 57, 57);
     padding-top: 5%;
+  }
+
+  .cvLeftCloud {
+    position: absolute;
+    left: 20%;
+    top: 7%;
+    width: 11%;
+  }
+  
+  .cvRightCloud {
+    position: absolute;
+    left: 67%;
+    top: 30%;
+    width: 11%;
   }
     
   .tableBasicInfo {
@@ -362,6 +400,19 @@ body, html {
   
   .webClick:hover {
     color: white;
+  }
+
+  /* responsive design and media queries for curriculum vitae page */
+  @media (max-width: 1555px) {
+
+  }
+  
+  @media (max-width: 810px) {
+
+  }
+  
+  @media (max-width: 768px) {
+   
   }
 
   /* contact me page styles */
