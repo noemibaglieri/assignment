@@ -4,6 +4,7 @@ html {
   width: 100vw;
   height: 100vh;
   text-align: center;
+  overflow-x: hidden;
 }
 
 * {
@@ -55,12 +56,7 @@ a {
   text-decoration: none;
 }
 
-.skillRow p,
-.contactMe p,
-.info-table p,
-.journalsDivsLeft p,
-.journalsDivsRight p,
-.journalsSummary p {
+.skillRow p, .contactMe p, .info-table p, .journalsDivsLeft p, .journalsDivsRight p, .journalsSummary p {
   margin-bottom: 3%;
 }
 
@@ -213,7 +209,7 @@ a {
   background-color: rgb(58, 57, 57);
   width: 100vw;
   height: 170px;
-  margin-top: 3%;
+  margin-top: 2rem;
 }
 
 .footerLinks {
@@ -237,40 +233,56 @@ a {
 
 /* home page styles */
 .profile p {
-  margin-bottom: 1.5%;
+  margin-bottom: 2rem;
+}
+
+.homeTop h1 {
+  font-size: 950%;
 }
 
 .homeTop {
-  width: 100vw;
-  height: 52.2vw;
+  width: 100%;
+  height: 106%;
+  overflow: hidden;
   background-color: rgb(58, 57, 57);
-  padding-top: 5%;
+  padding-top: 5rem;
 }
 
 #subtitle {
   color: #eb839b;
-  font-size: 125%;
-  margin-bottom: 100px;
+  line-height: 0;
+  font-size: 1.2rem;
+  margin-bottom: 8rem;
+}
+
+.leftCloudBox {
+  position: relative;
 }
 
 .leftCloud {
   position: absolute;
-  right: 80%;
-  bottom: 40%;
-  width: 11%;
+  right: 90.5rem;
+  bottom: 5rem;
+  width: 200px;
+}
+
+.rightCloudBox {
+  position: relative;
 }
 
 .rightCloud {
   position: absolute;
-  left: 80%;
-  top: 80%;
-  width: 11%;
+  left: 90.5rem;
+  top: 30rem;
+  width: 200px;
 }
 
 .treePic {
-  width: 50%;
+  width: 950px;
+  max-width: 950px;
   margin-bottom: 0;
 }
+
 
 .skillRow {
   width: 50%;
@@ -317,7 +329,8 @@ a {
   border-radius: 11px;
   color: #ffffff;
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
+  margin-top: 1rem;
 }
 
 .contactMeButton:hover {
@@ -331,13 +344,57 @@ a {
 
 /* responsive design and media queries for home page */
 @media (max-width: 1555px) {
+  .leftCloud {
+    transition: 1s;
+    left: 5%;
+  }
+  .rightCloud {
+    transition: 1s;
+    left: 84%;
+  }
+
 }
 
-@media (max-width: 810px) {
+@media (max-width: 1276px) {
+  .leftCloud, .rightCloud {
+    display: none;
+  }
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
+  .homeTop {
+    height: 90%;
+  }
+  .treePic {
+    width: 700px;
+    max-width: 700px;
+    margin-bottom: 0;
+  } 
+
+  .noemiPic {
+    width: 50%;
+  }
+
 }
+@media (max-width: 616px) {
+  .headerMobile {
+    background-color: rgb(58, 57, 57);
+  }
+
+  .homeTop {
+    display: none;
+  }
+
+  .noemiPic {
+   padding: 2rem 0 1rem;
+  }
+
+  .treePic {
+    display: none;
+  }
+}
+
 
 /* journals page styles */
 .journals {
