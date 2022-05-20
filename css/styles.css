@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   font-family: "Poppins", sans-serif;
   width: 100vw;
   height: 100vh;
@@ -137,75 +136,75 @@ a {
 
 /* mobile menu styles */
 @media (max-width: 700px) {
-
-  .header {
-    display: none;
+ .header {
+   display: none;
   }
 
-  .headerMobile {
-  display: block;
-  position: fixed;
-  box-shadow: 0 -6px 10px 5px rgb(58, 57, 57);
-  width: 100vw;
-  height: 4rem;
-  padding-bottom: 0.4rem;
-  background-color: #ffffff;
-}
-  .mobileNavPics  {
-  width: 2rem;
+ .headerMobile {
+   display: block;
+   position: fixed;
+   box-shadow: 0 -6px 10px 5px rgb(58, 57, 57);
+   width: 100vw;
+   height: 4rem;
+   padding-bottom: 0.4rem;
+   background-color: #ffffff;
+ }
+
+ .mobileNavPics  {
+   width: 2rem;
   
-  }
-
-  .navLinksMobile {
-  line-height: 0.6;
-  padding: 1.2rem 0;
-  background-color: none;
 }
 
-  .navLinksMobile li {
-  display: inline-block;
-  margin: 0 15px;
-  background-color: none;
-  position: relative;
+ .navLinksMobile {
+   line-height: 0.6;
+   padding: 1.2rem 0;
+   background-color: none;
 }
 
-  .navLinksMobile li a {
-  text-decoration: none;
-  padding: 5px 0;
-  position: relative;
-  background-color: none;
+ .navLinksMobile li {
+   display: inline-block;
+   margin: 0 15px;
+   background-color: none;
+   position: relative;
+}
+
+ .navLinksMobile li a {
+   text-decoration: none;
+   padding: 5px 0;
+   position: relative;
+   background-color: none;
 }
   .navLinksMobile li a::after {
-  content: "";
-  background: #eb839b;
-  width: 0;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: width 0.5s;
+   content: "";
+   background: #eb839b;
+   width: 0;
+   height: 2px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transition: width 0.5s;
 }
 
   .navLinksMobile li a:hover::after {
-  width: 100%;
-  background-color: none;
+   width: 100%;
+   background-color: none;
 }
 
   .navLinksMobile li ul {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 30px 0 12px;
-  border-radius: 0px 0px 8px 8px;
+   display: none;
+   position: absolute;
+   background-color: white;
+   padding: 30px 0 12px;
+   border-radius: 0px 0px 8px 8px;
 }
 
   .navLinksMobile li:hover ul {
-  display: block;
+   display: block;
 }
 }
 
 /* footer styles */
-.footer {
+  .footer {
   background-color: rgb(58, 57, 57);
   width: 100vw;
   height: 170px;
@@ -377,6 +376,7 @@ a {
   }
 
 }
+
 @media (max-width: 616px) {
   .headerMobile {
     background-color: rgb(58, 57, 57);
@@ -398,10 +398,11 @@ a {
 
 /* journals page styles */
 .journals {
-  width: 100vw;
-  height: 25vw;
+  width: 100%;
+  height: 55%;
+  overflow: hidden;
   background-color: rgb(58, 57, 57);
-  padding-top: 5%;
+  padding-top: 5rem;
 }
 
 .journals p {
@@ -414,9 +415,7 @@ a {
   margin-top: 2.5%;
 }
 
-.htmlImg,
-.databaseImg,
-.uxImg {
+.htmlImg, .databaseImg, .uxImg {
   width: 20%;
 }
 
@@ -451,14 +450,70 @@ a {
 }
 
 /* responsive design and media queries for journals page */
-@media (max-width: 1555px) {
+
+@media (max-width: 879px) {
+  .journals h1 {
+    font-size: 130px;
+  }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 749px) {
+  .journals h1 {
+    font-size: 120px;
+  }
+}
+  @media (max-width: 691px) {
+
+    .journals {
+      width: 100%;
+      height: 92%; 
+    }
+    .journals h1 {
+      display: none;
+    }
+
+.modulesContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
+.modulesContainer > * {
+  margin: 2em 0;
 }
+
+.journalsSummary, .journalsDivsLeft, .journalsDivsRight {
+  width: 90%;
+  margin: auto;
+}
+  }
+@media (max-width: 616px) {
+.journals {
+  display: none;
+}
+
+.journalsSummary {
+  padding-top: 5rem;
+}
+}
+
+@media (max-width: 414px) {
+  .weekView, .summaryView {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+  }
+  .weekNumbers {
+    width: 10%;
+  }
+  .journalsImg {
+    width: 90%;
+    margin: auto;
+  }
+
+}
+
 
 /* curriculum page styles */
 .cvTop {
