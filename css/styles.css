@@ -450,7 +450,6 @@ a {
 }
 
 /* responsive design and media queries for journals page */
-
 @media (max-width: 879px) {
   .journals h1 {
     font-size: 130px;
@@ -514,37 +513,46 @@ a {
 
 }
 
-
 /* curriculum page styles */
 .cvTop {
-  width: 100vw;
-  height: 20vw;
+  width: 100%;
+  height: 45%;
+  overflow: hidden;
   background-color: rgb(58, 57, 57);
   padding-top: 5%;
 }
 
+.cvLeftCloudBox {
+  position: relative;
+}
+
 .cvLeftCloud {
   position: absolute;
-  left: 20%;
-  top: 7%;
-  width: 11%;
+  left: 5%;
+  top: -2rem;
+  width: 200px;
+}
+
+.cvRightCloudBox {
+  position: relative;
 }
 
 .cvRightCloud {
   position: absolute;
-  left: 67%;
-  top: 30%;
-  width: 11%;
+  left: 84%;
+  top: 8rem;
+  width: 200px;
 }
 
 .tableBasicInfo {
-  text-align: left;
-  width: auto;
-  margin: 2% 25% 1.5%;
+  text-align: center;
+  width: 900px;
+  margin: auto;
+  padding-bottom: 1.5rem;
 }
 
 .tableColumns {
-  width: 30%;
+  width: 900px;
 }
 
 #summary {
@@ -590,13 +598,64 @@ a {
 }
 
 /* responsive design and media queries for curriculum vitae page */
-@media (max-width: 1555px) {
+@media (max-width: 1515px) {
+  .cvLeftCloud {
+     
+    left: 5%;
+  }
+  .cvRightCloud {
+     
+    left: 84%;
+  }
+
+}
+@media (max-width: 1144px) {
+  .cvLeftCloud, .cvRightCloud {
+    display: none;
+  }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 912px) {
+.tableCv {
+  margin: 2% auto;
 }
 
-@media (max-width: 768px) {
+#summary {
+  width: 80%;
+  }
+}
+
+@media (max-width: 866px) {
+  .tableBasicInfo {
+
+    width: 600px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .cvTop {
+    padding-top: 14%;
+  }
+
+  @media (max-width: 616px) {
+    .cvTop {
+      display: none;
+    }
+
+    .mobileInfoStyle {
+      padding-top: 4rem;
+    }
+  }
+  @media (max-width: 375px) {
+    .tableBasicInfo, .mobileInfoStyle {
+      display: none;
+      
+    }
+    .summaryDiv {
+      padding-top: 6rem;
+      }
+}
 }
 
 /* contact me page styles */
