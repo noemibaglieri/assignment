@@ -1002,8 +1002,8 @@ input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:h
 #scrollToTop {
   display: none;
   position: fixed; /* Fixed/sticky position */
-  bottom: 200px; /* Place the button at the bottom of the page */
-  right: 5rem; /* Place the button 30px from the right */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: -13rem; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   cursor: pointer; /* Add a mouse pointer on hover */
   background: none;
@@ -1011,5 +1011,5 @@ input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:h
 }
 
 .scrollButton {
-  width: 59%;
+  width: 10%;
 }
