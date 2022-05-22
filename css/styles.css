@@ -1,9 +1,7 @@
 body, html {
   font-family: "Poppins", sans-serif;
-  width: 100vw;
   height: 100vh;
   text-align: center;
-  overflow-x: hidden;
 }
 
 * {
@@ -38,8 +36,9 @@ p {
 hr {
   border: dotted #f1dde2 6px;
   border-bottom: none;
-  margin: 0 35%;
-}
+  margin: 3rem 35%;
+  }
+
 
 span {
   color: rgb(58, 57, 57);
@@ -370,11 +369,6 @@ a {
     left: 84%;
   }
 
-  hr {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
   .skillRow {
   width: 80%;
   }
@@ -676,11 +670,12 @@ a {
   width: 200px;
 }
 
-.tableBasicInfo {
-  text-align: center;
-  width: 900px;
-  margin: auto;
-  padding-bottom: 1.5rem;
+.mobileInfoStyle {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  text-align: left;
+  justify-content: center;
 }
 
 .tableColumns {
@@ -745,9 +740,23 @@ a {
   .cvLeftCloud, .cvRightCloud {
     display: none;
   }
-}
 
+.mobileInfoStyle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+}
+@media (max-width: 1024px) {
+  .cvTop {
+    height: 30%;
+  }
+}
 @media (max-width: 912px) {
+
 .tableCv {
   margin: 2% auto;
 }
@@ -758,11 +767,10 @@ a {
 }
 
 @media (max-width: 866px) {
-  .tableBasicInfo {
-
-    width: 600px;
-    margin: auto;
+  .cvTop {
+    height: 14%;
   }
+
 }
 
 @media (max-width: 700px) {
@@ -774,19 +782,18 @@ a {
     .cvTop {
       display: none;
     }
+    .basicInfo {
+      font-size: 30px;
+      padding-top: 90px;
+ }
 
-    .mobileInfoStyle {
-      padding-top: 4rem;
-    }
   }
   @media (max-width: 375px) {
-    .tableBasicInfo, .mobileInfoStyle {
-      display: none;
-      
-    }
-    .summaryDiv {
-      padding-top: 6rem;
-      }
+
+   .basicInfo {
+     font-size: 30px;
+     padding-top: 90px;
+}
 }
 }
 
@@ -920,14 +927,17 @@ a {
   padding: 3%;
 }
 
-input:focus,
-input:hover,
-textarea:focus,
-textarea:hover,
-select:focus,
-select:hover {
+input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:hover {
   outline: none;
   border: 2px solid rgb(255, 255, 255);
+}
+
+.errorMessage {
+  border: 2px solid red;
+}
+
+.errorMessage::placeholder {
+  color: red;
 }
 
 .map {
@@ -992,8 +1002,8 @@ select:hover {
 #scrollToTop {
   display: none;
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: -150rem; /* Place the button 30px from the right */
+  bottom: 200px; /* Place the button at the bottom of the page */
+  right: 5rem; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   cursor: pointer; /* Add a mouse pointer on hover */
   background: none;
@@ -1001,11 +1011,5 @@ select:hover {
 }
 
 .scrollButton {
-  width: 10%;
-}
-
-@media (max-width: 700px) {
-  .scrollButton {
-     display: none;
-  }
+  width: 59%;
 }

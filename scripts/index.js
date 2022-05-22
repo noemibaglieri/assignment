@@ -42,8 +42,8 @@ form.addEventListener("submit", (e) => {
   }
 
   if (!email.value && !phoneNumber.value) {
-    email.placeholder = "Please enter either an email or a phone number";
-    phoneNumber.placeholder = "so I can get back to you!";
+    email.placeholder = "Please enter an email or a phone #";
+    phoneNumber.placeholder = "Please enter an email or a phone #";
     email.classList.add("errorMessage");
     phoneNumber.classList.add("errorMessage");
   }
