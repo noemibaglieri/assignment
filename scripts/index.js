@@ -28,26 +28,28 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function validateForm(event) {
-  event.preventDefault();
-  var inputName = document.forms["contactForm"]["fname"].value.trim();
-  if (!inputName) {
-    alert("Please, fill out your name.");
-    return;
+const userName = document.getElementById("name");
+const email = document.getElementById("email");
+const phoneNumber = document.getElementById("phone-number");
+const message = document.getElementById("message");
+const form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (!userName.value.trim()) {
+    userName.placeholder = "Please, fill out your name.";
+    userName.classList.add("errorMessage");
   }
 
-  var inputEmail = document.forms["contactForm"]["femail"].value.trim();
-  var inputNumber = document.forms["contactForm"]["fnumber"].value.trim();
-  if (!inputEmail && !inputNumber) {
-    alert(
-      "Please enter either an email or a phone number, so I can get back to you!"
-    );
-    return;
+  if (!email.value && !phoneNumber.value) {
+    email.placeholder = "Please enter either an email or a phone number";
+    phoneNumber.placeholder = "so I can get back to you!";
+    email.classList.add("errorMessage");
+    phoneNumber.classList.add("errorMessage");
   }
 
-  var input = document.forms["contactForm"]["fmessage"].value.trim();
-  if (!input) {
-    alert("You didn't write any message!");
-    return;
+  if (!message.value) {
+    message.placeholder = "You didn't write any message!";
+    message.classList.add("errorMessage");
   }
-}
+});

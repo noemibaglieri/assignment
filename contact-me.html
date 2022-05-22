@@ -49,16 +49,18 @@
     </div>
     <div class="contactMeTop">
         <h3>Get in touch!</h3>
-        <img class="contactMeLeftCloud" src="images/cloud.png" alt="cloud" />
-        <img class="contactMeRightCloud" src="images/cloud.png" alt="cloud" />
-        <form class="formStyle" name="contactForm" action="contact-me.html" onsubmit="validateForm(event)">
+        <div class="contactMeCloudsBox">
+          <img class="contactMeLeftCloud" src="images/cloud.png" alt="cloud" />
+          <img class="contactMeRightCloud" src="images/cloud.png" alt="cloud" />
+        </div>
+        <form class="formStyle" name="contactForm" action="contact-me.html" id="form" >
           <div class="nameAndSurname">
-            <input class="nameAndSurnameStyle" type="text" name="fname" placeholder="Name" />
+            <input class="nameAndSurnameStyle" type="text" id="name" name="fname" placeholder="Name" />
             <input class="nameAndSurnameStyle" type="text" placeholder="Surname" />
           </div>
           <div class="emailAndPhoneNumber">
-            <input class="emailAndPhoneNumberStyle" type="email" name="femail" placeholder="E-mail" />
-            <input class="emailAndPhoneNumberStyle" type="tel" name="fnumber" placeholder="Phone Number" />
+            <input class="emailAndPhoneNumberStyle" type="email" id="email" name="femail" placeholder="E-mail" />
+            <input class="emailAndPhoneNumberStyle" type="tel" id="phone-number" name="fnumber" placeholder="Phone Number" />
           </div>
           <div class="dateAndCountry">
             <input class="dateAndCountryStyle" type="date" placeholder="Date" />
@@ -314,7 +316,7 @@
           </div>
           <br />
           <div class="messageArea">
-          <textarea class="messageStyle" name="fmessage" placeholder="Your message here:"></textarea>
+          <textarea class="messageStyle" name="fmessage" id="message" placeholder="Your message here:"></textarea>
         </div>
           <input class="submitStyle" type="submit" />
         </form>

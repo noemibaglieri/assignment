@@ -121,7 +121,7 @@ a {
 }
 
 .dropdownMenuItems {
-  padding: 12px 0;
+  padding: 15px 0;
   width: 90px;
   border-radius: 5px;
 }
@@ -209,6 +209,7 @@ a {
   width: 100vw;
   height: 170px;
   margin-top: 2rem;
+  padding: auto;
 }
 
 .footerLinks {
@@ -228,6 +229,20 @@ a {
 #copyright {
   line-height: 0;
   color: rgb(255, 255, 255);
+}
+
+@media (max-width: 280px) {
+
+  .footerLinks {
+    font-size: 100%;
+  }
+
+  #copyright {
+    line-height: 1.2;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+  }
+
 }
 
 /* home page styles */
@@ -316,6 +331,10 @@ a {
   margin-right: 30px;
 }
 
+.contactMe p {
+  margin-bottom: 2rem;
+}
+
 .contactMeButton {
   background: #eb839b;
   background-image: -webkit-linear-gradient(top, #eb839b, #e76583);
@@ -329,7 +348,6 @@ a {
   color: #ffffff;
   font-size: 20px;
   padding: 10px 20px;
-  margin-top: 1rem;
 }
 
 .contactMeButton:hover {
@@ -352,27 +370,100 @@ a {
     left: 84%;
   }
 
+  hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .skillRow {
+  width: 80%;
+  }
 }
 
 @media (max-width: 1276px) {
   .leftCloud, .rightCloud {
     display: none;
   }
+}
+
+@media (max-width: 1024px) {
+  .treePic {
+    width: 50%;
+  }
+}
+
+@media (max-width: 912px) {
+  .homeTop {
+    height: 70%;
+  }
+
+  .noemiPic {
+    width: 30%;
+  }
+
+  .profile p {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .homeTop {
+    height: 23%;
+  }
+
+  .treePic {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .homeTop {
+    height: 28%;
+  }
+  .treePic {
+    display: none;
+  }
+  .profile p {
+    width: 50%;
+
+  }
 
 }
 
 @media (max-width: 700px) {
   .homeTop {
-    height: 90%;
+    height: 30%;
   }
+
   .treePic {
-    width: 700px;
-    max-width: 700px;
-    margin-bottom: 0;
+   display: none;
   } 
 
   .noemiPic {
-    width: 50%;
+    width: 30%;
+  }
+
+  .profile p {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .skills h2 {
+    margin-top: 1rem;
+  }
+
+  .contactMe p {
+    width: 80%;
+    margin: auto auto 1.5rem;
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
 }
@@ -386,12 +477,18 @@ a {
     display: none;
   }
 
-  .noemiPic {
-   padding: 2rem 0 1rem;
+  .profile {
+  padding-top: 5rem;
   }
 
   .treePic {
     display: none;
+  }
+}
+@media (max-width: 280px) {
+  .profile p {
+   text-align: left;
+   font-size: 100%;
   }
 }
 
@@ -419,9 +516,9 @@ a {
   width: 20%;
 }
 
-.weekView {
-  margin-bottom: 0.5%;
-}
+#weekView {
+   margin-bottom: 1rem;
+ }
 
 .weekNumbers {
   width: 60px;
@@ -435,13 +532,13 @@ a {
 
 .journalsDivsLeft {
   text-align: left;
-  width: 900px;
+  width: 70%;
   margin: auto;
 }
 
 .journalsDivsRight {
   text-align: right;
-  width: 900px;
+  width: 70%;
   margin: auto;
 }
 
@@ -450,13 +547,45 @@ a {
 }
 
 /* responsive design and media queries for journals page */
+@media (max-width: 1024px) {
+  .journals {
+    height: 75%;
+  }
+}
+@media (max-width: 915px) {
+  .journals {
+    height: 45%;
+  }
+  .journalsDivsLeft {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .journalsDivsRight {
+    text-align: right;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 912px) {
+  .journals {
+    height: 35%;
+  }
+
+}
+
 @media (max-width: 879px) {
   .journals h1 {
     font-size: 130px;
   }
 }
 
-@media (max-width: 749px) {
+@media (max-width: 820px) {
+ 
+  .journals {
+    height: 40%;
+  }
   .journals h1 {
     font-size: 120px;
   }
@@ -467,6 +596,7 @@ a {
       width: 100%;
       height: 92%; 
     }
+
     .journals h1 {
       display: none;
     }
@@ -498,14 +628,16 @@ a {
 }
 
 @media (max-width: 414px) {
-  .weekView, .summaryView {
+  #weekView, .summaryView {
     width: 90%;
-    margin: auto;
+    margin: 1rem;
     text-align: left;
   }
+
   .weekNumbers {
     width: 10%;
   }
+
   .journalsImg {
     width: 90%;
     margin: auto;
@@ -666,6 +798,10 @@ a {
   padding-top: 5rem;
 }
 
+.contactMeCloudsBox {
+  position: relative;
+}
+
 .contactMeLeftCloud {
   position: absolute;
   left: 20%;
@@ -676,7 +812,7 @@ a {
 .contactMeRightCloud {
   position: absolute;
   left: 70%;
-  top: 45%;
+  top: 16rem;
   width: 11%;
 }
 
@@ -685,9 +821,7 @@ a {
   width: fit-content;
 }
 
-.nameAndSurname,
-.emailAndPhoneNumber,
-.dateAndCountry {
+.nameAndSurname, .emailAndPhoneNumber, .dateAndCountry {
   display: flex;
   gap: 1rem;
 }
@@ -859,7 +993,7 @@ select:hover {
   display: none;
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
-  right: -150px; /* Place the button 30px from the right */
+  right: -150rem; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   cursor: pointer; /* Add a mouse pointer on hover */
   background: none;
