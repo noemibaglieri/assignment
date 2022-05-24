@@ -1,107 +1,175 @@
+<!-- declaring document type -->
 <!DOCTYPE html>
+<!-- specifying language of the page en = English -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="This website is an assigment for Dr. Omar Al Hashimi, University of West London">
-    <meta name="keywords" content="HTML, CSS, JavaScript, UWL, Assignment">
-    <meta name="author" content="Noemi Baglieri">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
-    <title>Noemi's Assignment</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="images/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"/>
-  </head>
-    <body>
-     <button onclick="topFunction()" id="scrollToTop" title="Go to top"><img class="scrollButton" src="images/scrollButton.png" alt="Scroll to top"></button>
-     <div class="headerMobile">
-      <nav>
-        <ul class="navLinksMobile">
-          <li><a href="index.html"><img class="mobileNavPics" src="images/home.png" alt="home button"></a></li>
-          <li><a href="journals.html"><img class="mobileNavPics" src="images/journals.png" alt="home button"></a></li>
-          <li><a href="curriculum-vitae.html"><img class="mobileNavPics" src="images/cv.png" alt="home button"></a></li>
-          <li><a href="contact-me.html"><img class="mobileNavPics" src="images/contactmepls.png" alt="home button"></a></li>
-        </ul>
-      </nav>
-    </div>
-      <div class="header">
-        <nav>
-          <ul class="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="journals.html">Journals <img class="arrowDown" src="images/dropdown-img.png" alt="arrow down"></a>
-              <ul>
-                <li class="dropdownMenuItems"><a href="journals.html#week2">Week 2</a></li>
-                <li class="dropdownMenuItems"><a href="journals.html#week3">Week 3</a></li>
-                <li class="dropdownMenuItems"><a href="journals.html#week4">Week 4</a></li>
-                <li class="dropdownMenuItems"><a href="journals.html#week5">Week 5</a></li>
-                <li class="dropdownMenuItems"><a href="journals.html#week6">Week 6</a></li>
-                <li class="dropdownMenuItems"><a href="journals.html#week7">Week 7</a></li>
-                <li class="dropdownMenuItems"><a href="journals.html#week8">Week 8</a></li>
-                <li class="dropdownMenuItems"><a href="journals.html#week9">Week 9</a></li> 
-                <li class="dropdownMenuItems"><a href="journals.html#week10">Week 10</a></li>            
-              </ul></li>
-            <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
-            <li><a href="contact-me.html">Contact Me</a></li>
-          </ul>
-        </nav>
+   <!-- head element for metadata -->
+   <head>
+      <!-- all the text in this page is encoded using utf-8 encoding system -->
+      <meta charset="utf-8" />
+      <!-- brief summary of the page -->
+      <meta name="description" content="This website is an assigment for Dr. Omar Al Hashimi, University of West London">
+      <!-- meta keywords related to this page that help search engines understand the topic  -->
+      <meta name="keywords" content="HTML, CSS, JavaScript, UWL, Assignment">
+      <!-- defines author -->
+      <meta name="author" content="Noemi Baglieri">
+      <!-- instructions for the browser to control dimensions and scaling for responsive design -->
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+      <!-- gives title to this page -->
+      <title>Noemi's Assignment</title>
+      <!-- links external css file to style this page -->
+      <link rel="stylesheet" href="css/styles.css" />
+      <!-- sets favicon -->
+      <link rel="icon" href="images/favicon.png" />
+      <!-- lines 24 to 26 link specific fonts to this website -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"/>
+   </head>
+
+   <!-- main element of the page -->
+   <body>
+
+      <!-- javascript function that allows users to scroll to the top with a button -->
+      <button onclick="topFunction()" id="scrollToTop" title="Go to top"><img class="scrollButton" src="images/scrollButton.png" alt="Scroll to top"></button>
+
+      <!-- navigation menu for mobile view -->
+      <div class="headerMobile">
+         <!-- nav tag to define set of navigation links -->
+         <nav>
+            <!-- unordered list to create anchor tags linked to other pages of the website -->
+            <ul class="navLinksMobile">
+               <!-- lines 42 to 45 items of the unordered list -->
+               <li><a href="index.html"><img class="mobileNavPics" src="images/home.png" alt="home button"></a></li>
+               <li><a href="journals.html"><img class="mobileNavPics" src="images/journals.png" alt="home button"></a></li>
+               <li><a href="curriculum-vitae.html"><img class="mobileNavPics" src="images/cv.png" alt="home button"></a></li>
+               <li><a href="contact-me.html"><img class="mobileNavPics" src="images/contactmepls.png" alt="home button"></a></li>
+            </ul>
+         </nav>
       </div>
-            
-            <div class="homeTop">
-             <div class="rightCloudBox"><img class="rightCloud" src="images/cloud.png"></div>
-            <h1>I'm Noemi</h1>
-            <p id="subtitle">Creative Computing student @ University of West London</p>
-            <div class="leftCloudBox"><img class="leftCloud" src="images/cloud.png"></div>
-            <img class="treePic" src="images/home/tree.png">
-            </div>
 
-            <div>
-                <div class="profile">
-                    <h2>Hello<span>!</span></h2>
-                       <img class="noemiPic" src="images/home/noemi.png" alt="Profilepic">
-                       <p>My name is Noemi Baglieri.
-                      <br>I'm a student pursuing my BSc (Hons) Creative Computing degree at <a class="externalLinks" href="https://www.uwl.ac.uk/">University of West London</a>. 
-                      <br>This website was made for <strong>Dr. Omar Al Hashimi</strong>, as an assignment for his module.</p>
-                </div>
-            <hr>
-            <div class="skills">
-                <h2>My Skills<span>.</span></h2>
-                <div class="skillRow">
-                    <img class="photoshopPic" src="images/home/photoshop.png" alt="PS">
-                    <h3>Photoshop</h3>
-                    <p>I started learning Photoshop by myself, at the age of 14. Because of that, it's one of the software I can use best! </p>
-                </div>
-            <div class="skillRow">
-                <img class="javaPic" src="images/home/java.png" alt="Java">
-                        <h3 class="javaHead">Java</h3>
-                        <p class="javaHead">Learning Java was something new to me, I started working with it this year, thanks to one of my course modules. I am still a beginner but I enjoyed what I've studied so far and I plan on mastering it.</p>
-                      </div>
-                      <div class="skillRow">
-                          <img class="codingPic" src="images/home/coding.gif" alt="Html">
-                          <h3>HTML & CSS</h3>
-                          <p>Web Design always fascinated me, but I only started learning some bits of it this year, just like Java. I find it fun and I already completed different online courses to deepen my knowledge.</p>
-                      </div>
-                    </div>
+      <!-- header box  -->
+      <div class="header">
+         <!-- nav tag to define set of navigation links -->
+         <nav>
+            <!-- unordered list to create anchor tags linked to other pages of the website -->
+            <ul class="navLinks">
+               <!-- lines 57 to 75 items of the unordered list -->
+               <li><a href="index.html">Home</a></li>
+               <li>
+                  <a href="journals.html">Journals <img class="arrowDown" src="images/dropdown-img.png" alt="arrow down"></a>
+                  <!-- unordered list inside another unordered list to create a menu under "journals" tab -->
+                  <ul>
+                     <!--  lines 63 to 71 items of the second unordered list -->
+                     <li class="dropdownMenuItems"><a href="journals.html#week2">Week 2</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week3">Week 3</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week4">Week 4</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week5">Week 5</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week6">Week 6</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week7">Week 7</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week8">Week 8</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week9">Week 9</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week10">Week 10</a></li>
+                  </ul>
+               </li>
+               <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+               <li><a href="contact-me.html">Contact Me</a></li>
+            </ul>
+         </nav>
+      </div>
 
-                    <hr>
+      <!-- dark grey stripe box  -->
+      <div class="homeTop">
+         <!-- right cloud img inside a div  -->
+         <div class="rightCloudBox"><img class="rightCloud" src="images/cloud.png" alt="Clouds"></div>
+         <!-- header 1 element  -->
+         <h1>I'm Noemi</h1>
+         <!-- paragraph element for subtitle -->
+         <p id="subtitle">Creative Computing student @ University of West London</p>
+         <!--left cloud img inside a div  -->
+         <div class="leftCloudBox"><img class="leftCloud" src="images/cloud.png" alt="Clouds"></div>
+         <!-- flowery tree image -->
+         <img class="treePic" src="images/home/tree.png" alt="Tree">
+      </div>
 
-                    <div class="contactMe">
-                      <h2>Let<span>'</span>s Chat<span>!</span></h2>
-                      <h3>We can talk about anything, really.</h3>
-                      <p>Do we share the same interests and you'd like to start a project with me? 
-                        <br>Don't be shy, let's create things!</p>
-                      <a class="contactMeButton" href="contact-me.html">CONTACT ME</a>
-                    </div>
-                  
-                  <div class="footer">
-                    <a class="footerLinks" href="https://github.com/noemibaglieri">GitHub</a>
-                    <a class="footerLinks" href="https://twitter.com/qtMiraeth/">Twitter</a>
-                    <a class="footerLinks" href="https://www.instagram.com/uwl_noemi">Instagram</a>
-                    <p id="copyright"><em>© Noemi Baglieri, 2022</em></p>
-                  </div>
+      <!-- profile box  -->
+      <div class="profile">
+         <!-- header 2 element with span to style ! colour  -->
+         <h2>Hello<span>!</span></h2>
+         <!-- picture of me  -->
+         <img class="noemiPic" src="images/home/noemi.png" alt="Profilepic">
+         <!-- short description about myself using paragraph and self closing br tags-->
+         <p>My name is Noemi Baglieri.
+            <br>I'm a student pursuing my BSc (Hons) Creative Computing degree at <a class="externalLinks" href="https://www.uwl.ac.uk/">University of West London</a>. 
+            <br>This website was made for <strong>Dr. Omar Al Hashimi</strong>, as an assignment for his module.
+         </p>
+      </div>
 
-            </div>
-            <script src="scripts/index.js" charset="utf-8"></script>
- 
-    </body>
+      <!-- self closing horizontal rule tag -->
+      <hr>
+
+      <!-- skills box -->
+      <div class="skills">
+         <!-- header 2 element with span to style . colour  -->
+         <h2>My Skills<span>.</span></h2>
+
+         <!-- box for first skill -->
+         <div class="skillRow">
+            <!-- Photoshop image -->
+            <img class="photoshopPic" src="images/home/photoshop.png" alt="PS">
+            <!-- header 3 element -->
+            <h3>Photoshop</h3>
+            <!-- paragraph element with description of photoshop skill -->
+            <p>I started learning Photoshop by myself, at the age of 14. Because of that, it's one of the software I can use best! </p>
+         </div>
+
+         <!-- box for second skill -->
+         <div class="skillRow">
+            <!-- Java image -->
+            <img class="javaPic" src="images/home/java.png" alt="Java">
+            <!-- header 3 element -->
+            <h3 class="javaHead">Java</h3>
+            <!-- paragraph element with description of java skill -->
+            <p class="javaHead">Learning Java was something new to me, I started working with it this year, thanks to one of my course modules. I am still a beginner but I enjoyed what I've studied so far and I plan on mastering it.</p>
+         </div>
+
+         <!-- box for third skill -->
+         <div class="skillRow">
+            <!-- coding image -->
+            <img class="codingPic" src="images/home/coding.gif" alt="Html">
+            <!-- header 3 element -->
+            <h3>HTML & CSS</h3>
+            <!-- paragraph element with description of HTML&CSS skill -->
+            <p>Web Design always fascinated me, but I only started learning some bits of it this year, just like Java. I find it fun and I already completed different online courses to deepen my knowledge.</p>
+         </div>
+      </div>
+
+      <!-- self closing horizontal rule tag -->
+      <hr>
+      
+      <!-- contact me box -->
+      <div class="contactMe">
+         <!-- header 2 element with span to style differently  -->
+         <h2>Let<span>'</span>s Chat<span>!</span></h2>
+         <!-- header 3 element -->
+         <h3>We can talk about anything, really.</h3>
+         <!-- paragraph element with br -->
+         <p>Do we share the same interests and you'd like to start a project with me? 
+            <br>Don't be shy, let's create things!
+         </p>
+         <!-- internal anchor tag that bring the user to Contact Me page -->
+         <a class="contactMeButton" href="contact-me.html">CONTACT ME</a>
+      </div>
+      
+      <!-- footer box -->
+      <div class="footer">
+         <!-- external anchor tags to my socials -->
+         <a class="footerLinks" href="https://github.com/noemibaglieri">GitHub</a>
+         <a class="footerLinks" href="https://twitter.com/qtMiraeth/">Twitter</a>
+         <a class="footerLinks" href="https://www.instagram.com/uwl_noemi">Instagram</a>
+         <!-- paragraph  -->
+         <p id="copyright">&copy; Noemi Baglieri, 2022</p>
+      </div>
+      <!-- script tag to embed external javascript -->  
+      <script src="scripts/index.js"></script>
+   </body>
 </html>

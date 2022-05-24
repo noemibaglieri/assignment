@@ -190,6 +190,7 @@ a {
 }
 
 #copyright { /* selects #copyright id which is a paragraph */
+  font-family: 'Times New Roman', Times, serif; /* changes font family only for this specific id */
   line-height: 0; /* sets the height of the line box */
   color: rgb(255, 255, 255); /* changes colour to white */
 }
@@ -446,6 +447,11 @@ a {
   color: white;  /* sets its colour */
 }
 
+.journalsAnchors:hover { /* selects .journalsAnchors class with pseudo-class hover */
+  background-color: #f8e0c4; /* updates background colour upon hovering */
+  color: rgb(58, 57, 57); /* updates colour upon hovering */
+}
+
 .modulesContainer { /* selects .modulesContainer class */
   display: flex; /* displays flexbox view */
   justify-content: center; /* justifies flexbox content to center */
@@ -619,6 +625,12 @@ a {
   justify-content: center; /* justify items to the center */
 }
 
+.tableIndent { /* selects .tableIndent class */
+  text-indent: 1%; /* indents the text inside the table */
+  margin-left: 25px; /* adds left margin */
+  margin-right: 5%; /* adds right margin */
+}
+
 .tableColumns { /* selects .tableColumn class */
   width: 900px; /* sets width */
 }
@@ -630,7 +642,6 @@ a {
 
 .tableCv { /* selects .tableCv class */
   text-align: left; /* aligns text to the left */
-  text-indent: 1%; /* indents the first line for each block of text inside the table */
   margin: 2% 25%; /* adds 2% margin to top + bottom and 25% margin to left + right */
 }
 
@@ -725,6 +736,7 @@ a {
 .basicInfo {  /* selects .basicInfo class */
   font-size: 30px; /* updates font size */
   padding-top: 90px; /* updates top padding only */
+  margin-top: 0; /* updates top margin only */
  }
 }
 
@@ -931,4 +943,21 @@ input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:h
 
 .scrollButton {
   width: 10%; /* sets size */
+}
+
+@media (max-width: 414px) { /* when the screen is 414px or less, changes styles previously declared */
+  #scrollToTop {
+    display: none; /* hides it unless user scrolls (combined with index.js) */
+    position: fixed; /* Fixes position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: -13.5rem; /* Place the button all the way to the right of the page */
+    z-index: 99; /* makes sure it does not get overlapped by other elements*/
+    cursor: pointer; /* adds mouse pointer when hovered */
+    background: none; /* removes background */
+    border: none; /* removes border */
+  }
+  
+  .scrollButton {
+    width: 10%; /* sets size */
+  }
 }

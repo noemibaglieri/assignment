@@ -1,313 +1,373 @@
+<!-- declaring document type -->
 <!DOCTYPE html>
+<!-- specifying language of the page en = English -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="This website is an assigment for Dr. Omar Al Hashimi, University of West London">
-    <meta name="keywords" content="HTML, CSS, JavaScript, UWL, Assignment">
-    <meta name="author" content="Noemi Baglieri">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
-    <title>Noemi's Assignment</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="images/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"/>
-  </head>
+   <!-- head element for metadata -->
+   <head>
+      <!-- all the text in this page is encoded using utf-8 encoding system -->
+      <meta charset="utf-8" />
+      <!-- brief summary of the page -->
+      <meta name="description" content="This website is an assigment for Dr. Omar Al Hashimi, University of West London">
+      <!-- meta keywords related to this page that help search engines understand the topic  -->
+      <meta name="keywords" content="HTML, CSS, JavaScript, UWL, Assignment">
+      <!-- defines author -->
+      <meta name="author" content="Noemi Baglieri">
+      <!-- instructions for the browser to control dimensions and scaling for responsive design -->
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+      <!-- gives title to this page -->
+      <title>Noemi's Assignment</title>
+      <!-- links external css file to style this page -->
+      <link rel="stylesheet" href="css/styles.css" />
+      <!-- sets favicon -->
+      <link rel="icon" href="images/favicon.png" />
+      <!-- lines 24 to 26 link specific fonts to this website -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"/>
+   </head>
 
-  <body>
-    
-    <button onclick="topFunction()" id="scrollToTop" title="Go to top"><img class="scrollButton" src="images/scrollButton.png" alt="Scroll to top"></button>
-    <div class="headerMobile">
-      <nav>
-        <ul class="navLinksMobile">
-          <li><a href="index.html"><img class="mobileNavPics" src="images/home.png" alt="home button"></a></li>
-          <li><a href="journals.html"><img class="mobileNavPics" src="images/journals.png" alt="home button"></a></li>
-          <li><a href="curriculum-vitae.html"><img class="mobileNavPics" src="images/cv.png" alt="home button"></a></li>
-          <li><a href="contact-me.html"><img class="mobileNavPics" src="images/contactmepls.png" alt="home button"></a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header">
-      <nav>
-        <ul class="navLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="journals.html">Journals <img class="arrowDown" src="images/dropdown-img.png" alt="arrow down"></a>
-            <ul>
-              <li class="dropdownMenuItems"><a href="#week2">Week 2</a></li>
-              <li class="dropdownMenuItems"><a href="#week3">Week 3</a></li>
-              <li class="dropdownMenuItems"><a href="#week4">Week 4</a></li>
-              <li class="dropdownMenuItems"><a href="#week5">Week 5</a></li>
-              <li class="dropdownMenuItems"><a href="#week6">Week 6</a></li>
-              <li class="dropdownMenuItems"><a href="#week7">Week 7</a></li>
-              <li class="dropdownMenuItems"><a href="#week8">Week 8</a></li>
-              <li class="dropdownMenuItems"><a href="#week9">Week 9</a></li> 
-              <li class="dropdownMenuItems"><a href="#week10">Week 10</a></li>                
-            </ul></li>
-          <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
-          <li><a href="contact-me.html">Contact Me</a></li>
-        </ul>
-      </nav>
-    </div>
+   <!-- main element of the page -->
+   <body>
 
-              <div class="journals">
-                <h1>2022 Journals</h1>
-                <div class="modulesContainer">
-                  <div>
-                    <img class="htmlImg" src="images/journals/programming.png" alt="html">
-                    <h3>Developing a Digital Identity</h3>
-                    <p>This module is taught by Dr. Omar Al Hashimi</p>
-                  </div>
-                  <div class="dataDiv">
-                    <img class="databaseImg" src="images/journals/server.png" alt="databases">
-                    <h3>Information Systems & Datasbases</h3>
-                    <p>This module is taught by Dr. Hafiz Sherazi</p>
-                  </div>
-                  <div class="uxDiv">
-                    <img class="uxImg" src="images/journals/ux.png" alt="UX">
-                    <h3>User Experience Design</h3>
-                    <p>This module is taught by Dr. Ali Gheitasy</p>
-                  </div>
-                  </div>
-              </div>
+      <!-- javascript function that allows users to scroll to the top with a button -->
+      <button onclick="topFunction()" id="scrollToTop" title="Go to top"><img class="scrollButton" src="images/scrollButton.png" alt="Scroll to top"></button>
 
-              <div class="journalsSummary">
-                <h2>Welcome<span>!</span></h2>
-                <p class="summaryView">In this section, you will find a few reflective journals about my Creative Computing modules, starting from <strong>Week 2</strong> all the way to <strong>Week 10.</strong>
-                  <br><p id="weekView">Please select the week you would like to view:</p> 
-              </div>
-              
-                <div class="journalsContainer">
-                  
-                  <div class="weekNumbers">
-                    <a href="#week2"><img class="journalsImg" src="images/weeks/week2.png" alt="2"></a>
-                  </div>
-                  <div class="weekNumbers">
-                    <a href="#week3"><img class="journalsImg" src="images/weeks/week3.png" alt="3"></a>
-                  </div>
-                  <div class="weekNumbers">
-                    <a href="#week4"><img class="journalsImg" src="images/weeks/week4.png" alt="4"></a>
-                  </div>
-                  <div class="weekNumbers">
-                    <a href="#week5"><img class="journalsImg" src="images/weeks/week5.png" alt="5"></a>
-                  </div>
-                  <div class="weekNumbers">
-                    <a href="#week6"><img class="journalsImg" src="images/weeks/week6.png" alt="6"></a>
-                  </div>
-                  <div class="weekNumbers">
-                    <a href="#week7"><img class="journalsImg" src="images/weeks/week7.png" alt="7"></a>
-                  </div>
-                  <div class="weekNumbers">
-                    <a href="#week8"><img class="journalsImg" src="images/weeks/week8.png" alt="8"></a>
-                  </div>
-                  <div class="weekNumbers">
-                    <a href="#week9"><img class="journalsImg" src="images/weeks/week9.png" alt="9"></a>
-                  </div>
-                  <div class="weekNumbers">
-                    <a href="#week10"><img class="journalsImg" src="images/weeks/week10.png" alt="10"></a>
-                  </div>
-                </div>
-              
-              <hr>
+      <!-- navigation menu for mobile view -->
+      <div class="headerMobile">
+         <!-- nav tag to define set of navigation links -->
+         <nav>
+            <!-- unordered list to create anchor tags linked to other pages of the website -->
+            <ul class="navLinksMobile">
+               <!-- lines 42 to 45 items of the unordered list -->
+               <li><a href="index.html"><img class="mobileNavPics" src="images/home.png" alt="home button"></a></li>
+               <li><a href="journals.html"><img class="mobileNavPics" src="images/journals.png" alt="home button"></a></li>
+               <li><a href="curriculum-vitae.html"><img class="mobileNavPics" src="images/cv.png" alt="home button"></a></li>
+               <li><a href="contact-me.html"><img class="mobileNavPics" src="images/contactmepls.png" alt="home button"></a></li>
+            </ul>
+         </nav>
+      </div>
 
-              <h2><a id="week2">Week 2</a></h2>
+      <!-- header box  -->
+      <div class="header">
+         <!-- nav tag to define set of navigation links -->
+         <nav>
+            <!-- unordered list to create internal anchor tags linked to other pages of the website -->
+            <ul class="navLinks">
+               <!-- lines 57 to 71 items of the unordered list -->
+               <li><a href="index.html">Home</a></li>
+               <li>
+                  <a href="journals.html">Journals <img class="arrowDown" src="images/dropdown-img.png" alt="arrow down"></a>
+                  <!-- unordered list inside another unordered list to create a menu under "journals" tab -->
+                  <ul>
+                     <!--  lines 63 to 71 items of the second unordered list-->
+                     <li class="dropdownMenuItems"><a href="#week2">Week 2</a></li>
+                     <li class="dropdownMenuItems"><a href="#week3">Week 3</a></li>
+                     <li class="dropdownMenuItems"><a href="#week4">Week 4</a></li>
+                     <li class="dropdownMenuItems"><a href="#week5">Week 5</a></li>
+                     <li class="dropdownMenuItems"><a href="#week6">Week 6</a></li>
+                     <li class="dropdownMenuItems"><a href="#week7">Week 7</a></li>
+                     <li class="dropdownMenuItems"><a href="#week8">Week 8</a></li>
+                     <li class="dropdownMenuItems"><a href="#week9">Week 9</a></li>
+                     <li class="dropdownMenuItems"><a href="#week10">Week 10</a></li>
+                  </ul>
+               </li>
+               <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+               <li><a href="contact-me.html">Contact Me</a></li>
+            </ul>
+         </nav>
+      </div>
+      
+      <!--  studied modules for term 2 -->
+      <div class="journals">
+         <!--  header 1 element -->
+         <h1>2022 Journals</h1>
+         <!-- flexbox container -->
+         <div class="modulesContainer">
 
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>Today’s lesson was an introduction to HTML and CSS rules.
-                  We looked at a HTML structure to start with, we were explained the different kinds of tags one can use (opening and closing tags, empty tags) and how to correctly nest them.
-                  After that we moved onto a demonstration of a CSS rule set. So far, I am intrigued and can’t wait to start practicing on building our website, the only thing that made me question the purpose of this module is that our lecturer told us he is mostly going to teach us about HTML and CSS with “a bit” of JavaScript. At the moment I feel like there is not really a need to have an entire module focus on HTML and such as it is extremely basic and intuitive, we would probably just need a few lessons to get the grasp of it. I would rather have more JavaScript and “a bit” of HTML and CSS, I just personally think it would be more useful.
-                  </p>
-              </div>
+            <!-- flexbox item 1 -->
+            <div>
+               <!-- html module picture -->
+               <img class="htmlImg" src="images/journals/programming.png" alt="html">
+               <!-- header 3 element -->
+               <h3>Developing a Digital Identity</h3>
+               <!-- paragraph element with info about modules + anchor tags to lecturer's website -->
+               <p>This module is taught by Dr. <a class="journalsAnchors" href="https://www.uwl.ac.uk/staff/omar-al-hashimi">Omar Al Hashimi</a></p>
+            </div>
 
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>Before starting the 2nd term, I already knew this module was going to be the one that I would consider the most challenging between the three. Or rather, the one that I would find less interesting. These first two lectures proved me right. I am not sure if it is just my problem, but I find all the information that we are being fed, a bit too hard to remember or even understand it at all. The materials that we were given, like YouTube videos, are possibly making it worse. In fact, I’ve had to search for different videos myself and that helped much more than the ones suggested. As an example, one of the videos for the first week it was made using text-to-speech rather than having an actual person trying to talk about database and explaining it. I would find it helpful if lecturers tried to make this module more engaging instead of giving us robotic voices videos.</p>
-              </div>
+            <!-- flexbox item 2 -->
+            <div class="dataDiv">
+               <!-- database module picture -->
+               <img class="databaseImg" src="images/journals/server.png" alt="databases">
+               <!-- header 3 element -->
+               <h3>Information Systems & Datasbases</h3>
+               <!-- paragraph element with info about modules + anchor tags to lecturer's website -->
+               <p>This module is taught by Dr. <a class="journalsAnchors" href="https://www.uwl.ac.uk/staff/hafiz-husnain-raza-sherazi">Hafiz Sherazi</a></p>
+            </div>
 
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>While all the modules I had so far were shared with other courses, this one was the first one to be designed only for my course specifically. This is why I was looking forward to starting this term. First week was pretty much just introductive, same as the other modules, for this second week we were given the case study that we will have to work on for our assignment. The lecturer explained to has we have to create an e-map for our Ealing Campus, but it is not really clear how we can do that, hopefully we will get more details in the upcoming weeks. </p>
-              </div>
+            <!-- flexbox item 3 -->
+            <div class="uxDiv">
+               <!-- ux design module picture -->
+               <img class="uxImg" src="images/journals/ux.png" alt="UX">
+               <!-- header 3 element -->
+               <h3>User Experience Design</h3>
+               <!-- paragraph element with info about modules + anchor tags to lecturer's website -->
+               <p>This module is taught by Dr. <a class="journalsAnchors" href="https://www.uwl.ac.uk/staff/ali-gheitasy">Ali Gheitasy</a></p>
+            </div>
+         </div>
+      </div>
 
-              <hr>
-              
-              <h2><a id="week3">Week 3</a></h2>
+      <!-- box with a brief description of the page -->
+      <div class="journalsSummary">
+        <!-- header 2 element with span for different style -->
+         <h2>Welcome<span>!</span></h2>
+         <p class="summaryView">In this section, you will find a few reflective journals about my Creative Computing modules, starting from <strong>Week 2</strong> all the way to <strong>Week 10.</strong>
+            <br>
+         <p id="weekView">Please select the week you would like to view:</p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>I found this week’s lesson a bit repetitive and very similar to last week, with just the addition of a couple of things. There was a “change headings” activity on the slides that we were meant to do, but I did find it a bit awkward for mainly two reasons. First, why would we have activities in a lecture? Wouldn’t it be more useful to have tasks put in our seminar sessions? Second, the task was extremely easy, and I do feel like everybody knew how to do that already. I just think this module does not really challenge me into doing anything rather than just follow the lecture without really thinking about solutions for tasks as it is very straight forward, but maybe it is just because it is the start of it.
-                  I have never even done any HTML or CSS in my life so I can only imagine how people that already know these things might feel, if this is how I’m experiencing it right now.
-                  </p>
-              </div>
+      <!-- flexbox container -->
+      <div class="journalsContainer">
 
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>I am starting to think that the subject it is not the only problem about this module at all. The way the lecturer explain things is extremely confusing, he repeats the same thing over and over again and at the end of the lesson I feel like I’ve had 5-hours lecture rather than a 2-hours one. It is not engaging, and a lot of the things are not even explained. He mentioned we are going to have a test in week 4 and one of the subjects to cover is relational algebra and its signs / operators. He did not explain this topic at all nor the signs. I had to teach myself on YouTube once again and as I am grateful that something like this exists today, I am starting to ask myself what the point is into going in his lectures at all. I feel like I am not going to score a good grade in the upcoming test as each lesson I attend makes me more confused and at this point it is just counterproductive.</p>
-              </div>
+        <!-- flexbox item 1 -->
+         <div class="weekNumbers">
+            <a href="#week2"><img class="journalsImg" src="images/weeks/week2.png" alt="2"></a>
+         </div>
 
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>This module  is overall very interesting to me so far, and it looks like something I will enjoy doing in the future, even when I will be done graduating. I am not sure if I would embrace it as a full-time job yet, but I am very interested in it. The only thing I am confused about is the assignment, the lecture does not seem to give many details. And also, we never have lecture slides to look at before the lessons, she seems to be against that. Whenever she gives us activities, she’s never clear on what she expects from us, and it always turns out that she was expecting something different. Which is quite frustrating for me and does not really give me motivation to complete the activities at all because I am often confused. </p>
-              </div>
+         <!-- flexbox item 2 -->
+         <div class="weekNumbers">
+            <a href="#week3"><img class="journalsImg" src="images/weeks/week3.png" alt="3"></a>
+         </div>
 
-              <hr>
-              
-              <h2><a id="week4">Week 4</a></h2>
+         <!-- flexbox item 3 -->
+         <div class="weekNumbers">
+            <a href="#week4"><img class="journalsImg" src="images/weeks/week4.png" alt="4"></a>
+         </div>
 
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>I liked this week’s lecture as we were shown a sample website of what ours should look like. I found it so helpful to know exactly what is expected of me, and the phases of web development shown in class, gave me an idea on how to start my project, even though I believe they were not enough, but they did give me a starting point for my research. We learned about units of measure (px, pt, em, etc..), the different ways to style our HTML and set colours to specific elements, including the ways of selecting them by id, class, type and we also looked at relational selector’s rules.</p>
-              </div>
+         <!-- flexbox item 4 -->
+         <div class="weekNumbers">
+            <a href="#week5"><img class="journalsImg" src="images/weeks/week5.png" alt="5"></a>
+         </div>
 
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>It was test-day! I certainly did not feel ready for this. But I still did my best to revise the topics we were told to work on. I focused the most on the topic I believed it would be the hardest one which was “relational algebra operators” so I watched and read a lot of content about this in particular. It turned out to be a waste of time as there was maybe only one question about this and way more about ER diagrams and their relationships / decompositions. My score did not really live up to my standard as I am aiming for 80% on all my modules, and succeeded until now, so I am extremely disappointed at myself, but I expected it to be even worse than it actually went as I am really struggling to even make a sense out of this whole module. As a result of this I did not even attend my lectures today because I felt like prioritising revision rather than listening to a lesson that would most likely be of no use to me.  </p>
-              </div>
+         <!-- flexbox item 5 -->
+         <div class="weekNumbers">
+            <a href="#week6"><img class="journalsImg" src="images/weeks/week6.png" alt="6"></a>
+         </div>
 
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>Today’s lesson is about data gathering techniques that we will have to apply to our assignment. We talked about three techniques in particular: interviews, questionnaires and observation. 
-                  <br>We learned that interviews can be structured, as the interviewer asking predetermined questions to each person, worded exactly in the same way and asked in the same order, or unstructured, which allow more freedom and it feels like casual conversation, and it’s not necessarily the same for everyone, as conversation can evolve different ways for different people; because of that the interviewees might also mention issues that the interviewer did not consider at first. 
-                  </p>
-              </div>
+         <!-- flexbox item 6 -->
+         <div class="weekNumbers">
+            <a href="#week7"><img class="journalsImg" src="images/weeks/week7.png" alt="7"></a>
+         </div>
 
-              <hr>
+         <!-- flexbox item 7 -->
+         <div class="weekNumbers">
+            <a href="#week8"><img class="journalsImg" src="images/weeks/week8.png" alt="8"></a>
+         </div>
 
-              <h2><a id="week5">Week 5</a></h2>
+         <!-- flexbox item 8 -->
+         <div class="weekNumbers">
+            <a href="#week9"><img class="journalsImg" src="images/weeks/week9.png" alt="9"></a>
+         </div>
 
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>I found today’s lesson more challenging than the previous ones as we started talking about pseudo-classes and pseudo-elements, I feel like I have to do some additional research on top of this because I am not quite sure on how to use them but it could also be because I can’t visualise yet what would be the most effective way of including them in my website’s CSS. I found the other topics pretty easy, as they were mostly about styling our HTML text with different font families, sizes, shadows, spacings and also how to align them or remove default decorations.</p>
-              </div>
+         <!-- flexbox item 9 -->
+         <div class="weekNumbers">
+            <a href="#week10"><img class="journalsImg" src="images/weeks/week10.png" alt="10"></a>
+         </div>
+      </div>
 
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>From this week onwards, I have decided not to attend this module’s lectures anymore and to just learn about databased through slides and other materials found online.
-                  <br>This week we learned how to recognise the steps of the database lifecycle, explain the different stages of a conceptual, logical and physical database design and to understand the role of a data dictionary. We learned about the steps we need to consider before building our database, such as analysing environments, defining problems, carrying out various studies, defining objectives, requirements and scope. We also understood that for a database to have a successful implementation it’s crucial to involve users and develop a habit of repeating steps.
-                  </p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>This week’s lesson was about Software Development Methodology. It’s a procedure that was introduced by software developers in order to choose an appropriate method to design different programs. We looked in particular to three of them: Waterfall, Rapid Application Development and Agile Development. Each of them has its advantages and disadvantages, it all comes to which methodology is more appropriate for the software type. So, for UX Design, it’s important identifying appropriate SDM, and user studies at each phase.</p>
-              </div>
+      <!-- week 2 journals container -->
+      <h2><a id="week2">Week 2</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>Today’s lesson was an introduction to HTML and CSS rules.
+            We looked at a HTML structure to start with, we were explained the different kinds of tags one can use (opening and closing tags, empty tags) and how to correctly nest them.
+            After that we moved onto a demonstration of a CSS rule set. So far, I am intrigued and can’t wait to start practicing on building our website, the only thing that made me question the purpose of this module is that our lecturer told us he is mostly going to teach us about HTML and CSS with “a bit” of JavaScript. At the moment I feel like there is not really a need to have an entire module focus on HTML and such as it is extremely basic and intuitive, we would probably just need a few lessons to get the grasp of it. I would rather have more JavaScript and “a bit” of HTML and CSS, I just personally think it would be more useful.
+         </p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>Before starting the 2nd term, I already knew this module was going to be the one that I would consider the most challenging between the three. Or rather, the one that I would find less interesting. These first two lectures proved me right. I am not sure if it is just my problem, but I find all the information that we are being fed, a bit too hard to remember or even understand it at all. The materials that we were given, like YouTube videos, are possibly making it worse. In fact, I’ve had to search for different videos myself and that helped much more than the ones suggested. As an example, one of the videos for the first week it was made using text-to-speech rather than having an actual person trying to talk about database and explaining it. I would find it helpful if lecturers tried to make this module more engaging instead of giving us robotic voices videos.</p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>While all the modules I had so far were shared with other courses, this one was the first one to be designed only for my course specifically. This is why I was looking forward to starting this term. First week was pretty much just introductive, same as the other modules, for this second week we were given the case study that we will have to work on for our assignment. The lecturer explained to has we have to create an e-map for our Ealing Campus, but it is not really clear how we can do that, hopefully we will get more details in the upcoming weeks. </p>
+      </div>
 
-              <hr>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <h2><a id="week6">Week 6</a></h2>
+      <!-- week 3 journals container -->
+      <h2><a id="week3">Week 3</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>I found this week’s lesson a bit repetitive and very similar to last week, with just the addition of a couple of things. There was a “change headings” activity on the slides that we were meant to do, but I did find it a bit awkward for mainly two reasons. First, why would we have activities in a lecture? Wouldn’t it be more useful to have tasks put in our seminar sessions? Second, the task was extremely easy, and I do feel like everybody knew how to do that already. I just think this module does not really challenge me into doing anything rather than just follow the lecture without really thinking about solutions for tasks as it is very straight forward, but maybe it is just because it is the start of it.
+            I have never even done any HTML or CSS in my life so I can only imagine how people that already know these things might feel, if this is how I’m experiencing it right now.
+         </p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>I am starting to think that the subject it is not the only problem about this module at all. The way the lecturer explain things is extremely confusing, he repeats the same thing over and over again and at the end of the lesson I feel like I’ve had 5-hours lecture rather than a 2-hours one. It is not engaging, and a lot of the things are not even explained. He mentioned we are going to have a test in week 4 and one of the subjects to cover is relational algebra and its signs / operators. He did not explain this topic at all nor the signs. I had to teach myself on YouTube once again and as I am grateful that something like this exists today, I am starting to ask myself what the point is into going in his lectures at all. I feel like I am not going to score a good grade in the upcoming test as each lesson I attend makes me more confused and at this point it is just counterproductive.</p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>This module  is overall very interesting to me so far, and it looks like something I will enjoy doing in the future, even when I will be done graduating. I am not sure if I would embrace it as a full-time job yet, but I am very interested in it. The only thing I am confused about is the assignment, the lecture does not seem to give many details. And also, we never have lecture slides to look at before the lessons, she seems to be against that. Whenever she gives us activities, she’s never clear on what she expects from us, and it always turns out that she was expecting something different. Which is quite frustrating for me and does not really give me motivation to complete the activities at all because I am often confused. </p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>For this week, we started talking about usability and how important it is. We discussed about the overall behaviour of a website user and how they can get easily frustrated if they don’t find what they’re looking for quickly. We were given 9 guidelines to follow which, in my opinion, were pretty much common sense but it is always good to have them laid out, to make sure we consider them when we’re building our websites or apps. We looked at some bad examples and I found there was a surprisingly amount of website that don’t adhere to the principles of graphic design. After this lesson I will make sure my website is as usable and attractive looking as my skills can manage.</p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>This lesson we learned how to use selected character functions, how to display dates in specific formats, select and manipulate NULL values using NVL functions as well as decode function. We also know how to use the “where” clause to restrict the output.
-                  The more I learn about this topic, the more I dislike. I am finding it extremely difficult to take an interest in this, but it’s probably due to the fact that I’m having a hard time making a sense of all this
-                  </p>
-              </div>
+      <!-- week 4 journals container -->
+      <h2><a id="week4">Week 4</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>I liked this week’s lecture as we were shown a sample website of what ours should look like. I found it so helpful to know exactly what is expected of me, and the phases of web development shown in class, gave me an idea on how to start my project, even though I believe they were not enough, but they did give me a starting point for my research. We learned about units of measure (px, pt, em, etc..), the different ways to style our HTML and set colours to specific elements, including the ways of selecting them by id, class, type and we also looked at relational selector’s rules.</p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>It was test-day! I certainly did not feel ready for this. But I still did my best to revise the topics we were told to work on. I focused the most on the topic I believed it would be the hardest one which was “relational algebra operators” so I watched and read a lot of content about this in particular. It turned out to be a waste of time as there was maybe only one question about this and way more about ER diagrams and their relationships / decompositions. My score did not really live up to my standard as I am aiming for 80% on all my modules, and succeeded until now, so I am extremely disappointed at myself, but I expected it to be even worse than it actually went as I am really struggling to even make a sense out of this whole module. As a result of this I did not even attend my lectures today because I felt like prioritising revision rather than listening to a lesson that would most likely be of no use to me.  </p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>Today’s lesson is about data gathering techniques that we will have to apply to our assignment. We talked about three techniques in particular: interviews, questionnaires and observation. 
+            <br>We learned that interviews can be structured, as the interviewer asking predetermined questions to each person, worded exactly in the same way and asked in the same order, or unstructured, which allow more freedom and it feels like casual conversation, and it’s not necessarily the same for everyone, as conversation can evolve different ways for different people; because of that the interviewees might also mention issues that the interviewer did not consider at first. 
+         </p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>Today we talked about Conceptual Design. It is essential for a UX Designer to ask themselves what they want to create, what the assumptions of the idea are, and if it will achieve the result that is hoped for. To start, it’s important to put facts together by identifying usability and user experience goals and writing down initial user requirements based on findings (research, surveys, interviews…).
-                  Then proceed to write down claims and assumptions trying to defend and support them, this helps highlighting ones that are vague. After this we can start thinking about Conceptual Models, more specifically, outlining what users can achieve with a system and which concepts are essential to understand while interacting with it.
-                  </p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <hr>
-              
-              <h2><a id="week7">Week 7</a></h2>
+      <!-- week 5 journals container -->
+      <h2><a id="week5">Week 5</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>I found today’s lesson more challenging than the previous ones as we started talking about pseudo-classes and pseudo-elements, I feel like I have to do some additional research on top of this because I am not quite sure on how to use them but it could also be because I can’t visualise yet what would be the most effective way of including them in my website’s CSS. I found the other topics pretty easy, as they were mostly about styling our HTML text with different font families, sizes, shadows, spacings and also how to align them or remove default decorations.</p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>From this week onwards, I have decided not to attend this module’s lectures anymore and to just learn about databased through slides and other materials found online.
+            <br>This week we learned how to recognise the steps of the database lifecycle, explain the different stages of a conceptual, logical and physical database design and to understand the role of a data dictionary. We learned about the steps we need to consider before building our database, such as analysing environments, defining problems, carrying out various studies, defining objectives, requirements and scope. We also understood that for a database to have a successful implementation it’s crucial to involve users and develop a habit of repeating steps.
+         </p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>This week’s lesson was about Software Development Methodology. It’s a procedure that was introduced by software developers in order to choose an appropriate method to design different programs. We looked in particular to three of them: Waterfall, Rapid Application Development and Agile Development. Each of them has its advantages and disadvantages, it all comes to which methodology is more appropriate for the software type. So, for UX Design, it’s important identifying appropriate SDM, and user studies at each phase.</p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>After last week’s usability rules, we are back to learning about CSS structure, specifically margins, paddings, borders and in general going more into depth on how to style our website with these. This was a very simple and short lesson which allowed our lecturer to look more into the sample website and explain further what is requested from us. The website shown is very basic and its usability is high, but its graphics are not attractive, to my eye at least. I want my website to look nice as well as usable. That’s why I decided I will not take inspiration from the one shown, I already have a few ideas in mind and hopefully I’ll be able to fulfil these.</p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>For today’s lesson, the main topics were “Group by” and aggregate functions.
-                  We learned how to group together same value rows of columns, based on a function specified in the statement. We were also taught the purpose of aggregate functions such as min, max, count, sum and avg. which are pretty straight forward. They’re used to form a single summary value out of a series of values given by multiple rows. We also looked at filtering aggregated data using “having” clause.
-                  </p>
-              </div>
+      <!-- week 6 journals container -->
+      <h2><a id="week6">Week 6</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>For this week, we started talking about usability and how important it is. We discussed about the overall behaviour of a website user and how they can get easily frustrated if they don’t find what they’re looking for quickly. We were given 9 guidelines to follow which, in my opinion, were pretty much common sense but it is always good to have them laid out, to make sure we consider them when we’re building our websites or apps. We looked at some bad examples and I found there was a surprisingly amount of website that don’t adhere to the principles of graphic design. After this lesson I will make sure my website is as usable and attractive looking as my skills can manage.</p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>This lesson we learned how to use selected character functions, how to display dates in specific formats, select and manipulate NULL values using NVL functions as well as decode function. We also know how to use the “where” clause to restrict the output.
+            The more I learn about this topic, the more I dislike. I am finding it extremely difficult to take an interest in this, but it’s probably due to the fact that I’m having a hard time making a sense of all this
+         </p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>Today we talked about Conceptual Design. It is essential for a UX Designer to ask themselves what they want to create, what the assumptions of the idea are, and if it will achieve the result that is hoped for. To start, it’s important to put facts together by identifying usability and user experience goals and writing down initial user requirements based on findings (research, surveys, interviews…).
+            Then proceed to write down claims and assumptions trying to defend and support them, this helps highlighting ones that are vague. After this we can start thinking about Conceptual Models, more specifically, outlining what users can achieve with a system and which concepts are essential to understand while interacting with it.
+         </p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>This week we learned about “Use Cases”. We learned that these cases are important for expressing user interactions with the system we want to design. They can be presented by diagrams or simply by text which is easier to understand for the users. The diagrams help more when we need to represent a graphical view of the requirements, it also helps to identify system scope and boundary. While text-based “use cases” help describing the case in more depth. Either way, each use case needs a name, a number and a brief description.</p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <hr>
-              
-              <h2><a id="week8">Week 8</a></h2>
+      <!-- week 7 journals container -->
+      <h2><a id="week7">Week 7</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>After last week’s usability rules, we are back to learning about CSS structure, specifically margins, paddings, borders and in general going more into depth on how to style our website with these. This was a very simple and short lesson which allowed our lecturer to look more into the sample website and explain further what is requested from us. The website shown is very basic and its usability is high, but its graphics are not attractive, to my eye at least. I want my website to look nice as well as usable. That’s why I decided I will not take inspiration from the one shown, I already have a few ideas in mind and hopefully I’ll be able to fulfil these.</p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>For today’s lesson, the main topics were “Group by” and aggregate functions.
+            We learned how to group together same value rows of columns, based on a function specified in the statement. We were also taught the purpose of aggregate functions such as min, max, count, sum and avg. which are pretty straight forward. They’re used to form a single summary value out of a series of values given by multiple rows. We also looked at filtering aggregated data using “having” clause.
+         </p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>This week we learned about “Use Cases”. We learned that these cases are important for expressing user interactions with the system we want to design. They can be presented by diagrams or simply by text which is easier to understand for the users. The diagrams help more when we need to represent a graphical view of the requirements, it also helps to identify system scope and boundary. While text-based “use cases” help describing the case in more depth. Either way, each use case needs a name, a number and a brief description.</p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>In this lesson we talked more about a page’s layout. We were advised to download a file called “normalise.css” that apparently is extremely helpful if we want our website to look the same on different platform or in general having the same page settings as different pages within our website. I wish we had this information way sooner, as I already built most of my website and spent a lot of time trying to make it look good on most platforms, when I could have included this file almost effortlessly, but I am not upset about it as researching on how to do specific things really helped me to learn better CSS overall.</p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>In today’s lesson, we learned how to retrieve data from more than one table, how to use subqueries to combine select statements, set operators and joint notations.
-                  We now know that “joins” are used to link multiple tables to retrieve stored data, a “cartesian join” retrieves every combination of rows from the joint tables. There are two types of joins; “Inner Join” in which the records returned have at least one matching record in all tables and “Outer Join”, in which records can be returned even with no matching record. There are also “Self joins” which are used when a table needs to be joined with itself to retrieve the data required.
-                  </p>
-              </div>
+      <!-- week 8 journals container -->
+      <h2><a id="week8">Week 8</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>In this lesson we talked more about a page’s layout. We were advised to download a file called “normalise.css” that apparently is extremely helpful if we want our website to look the same on different platform or in general having the same page settings as different pages within our website. I wish we had this information way sooner, as I already built most of my website and spent a lot of time trying to make it look good on most platforms, when I could have included this file almost effortlessly, but I am not upset about it as researching on how to do specific things really helped me to learn better CSS overall.</p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>In today’s lesson, we learned how to retrieve data from more than one table, how to use subqueries to combine select statements, set operators and joint notations.
+            We now know that “joins” are used to link multiple tables to retrieve stored data, a “cartesian join” retrieves every combination of rows from the joint tables. There are two types of joins; “Inner Join” in which the records returned have at least one matching record in all tables and “Outer Join”, in which records can be returned even with no matching record. There are also “Self joins” which are used when a table needs to be joined with itself to retrieve the data required.
+         </p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>Today’s lesson was about analysing data we gathered through questionnaires or interviews. We learned that is important to check for inconsistencies that might be wrong (data cleansing), as incorrect data will lead to incorrect results. <br> We learned about the three approaches; qualitative, quantitative and mixed-method. Quantitative data is the information we gathered that can be translated into numbers, this is why is easier to analyse. While qualitative is about statements given in open questions, notes from researchers, feelings. It is mostly interpretating results.<br> While one might be easier than the other to analyse, we learned that both methods are required for a system to be successful. </p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>Today’s lesson was about analysing data we gathered through questionnaires or interviews. We learned that is important to check for inconsistencies that might be wrong (data cleansing), as incorrect data will lead to incorrect results. <br> We learned about the three approaches; qualitative, quantitative and mixed-method. Quantitative data is the information we gathered that can be translated into numbers, this is why is easier to analyse. While qualitative is about statements given in open questions, notes from researchers, feelings. It is mostly interpretating results.<br> While one might be easier than the other to analyse, we learned that both methods are required for a system to be successful. </p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <hr>
-              
-              <h2><a id="week9">Week 9</a></h2>
+      <!-- week 9 journals container -->
+      <h2><a id="week9">Week 9</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>Today’s lecture is dedicated to lists (ordered and unordered), links and placeholders and how to style them. We also learned how links can start email messages, calls, or skype sessions, this in particular it will be useful for my “Contact me” form that I have on the last page of my website. Among other things, we now know how to link mp3 files, videos, PowerPoint slide shows using anchor tags in our HTML, as useful as it can be, I don’t see this particular feature very useful for my website, it simply wouldn’t look great if I just attached some random file just to show that I can do something. </p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>This week’s lesson we were taught how to create and delete tables, how to add constraints to a table, how to modify tables, how to insert, update and delete data from a table and we also learned about the purpose of views and their creations. Most of the time, for either security or other matters, it’s undesirable to have users access the entire table, so here’s when the “VIEW” mechanism comes in handy. It creates a virtual table, and it hides parts of the database that do not need to be seen from certain users. It can be defined on the EMP table.</p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>Today’s lesson was about Low-fidelity Prototype. Prototyping is very important for evaluating the design of an interactive product and to explore its suitability effectively. In UX Design a low-fidelity prototype can be a series of sketches, PowerPoint slide shows or cardboard mock-ups. Ideally, we want to approach a low-fidelity prototype to start with as it is quick, cheap and easily changed. <br>The lecturer showed us a video as an example, even though it was only meant as a guideline, it did feel a bit overwhelming seeing all those cardboard sketches, but I can imagine how much harder it would be to change it up if we did not start with this method.</p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>Today’s lecture is dedicated to lists (ordered and unordered), links and placeholders and how to style them. We also learned how links can start email messages, calls, or skype sessions, this in particular it will be useful for my “Contact me” form that I have on the last page of my website. Among other things, we now know how to link mp3 files, videos, PowerPoint slide shows using anchor tags in our HTML, as useful as it can be, I don’t see this particular feature very useful for my website, it simply wouldn’t look great if I just attached some random file just to show that I can do something. </p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>This week’s lesson we were taught how to create and delete tables, how to add constraints to a table, how to modify tables, how to insert, update and delete data from a table and we also learned about the purpose of views and their creations. Most of the time, for either security or other matters, it’s undesirable to have users access the entire table, so here’s when the “VIEW” mechanism comes in handy. It creates a virtual table, and it hides parts of the database that do not need to be seen from certain users. It can be defined on the EMP table.</p>
-              </div>
+      <!-- week 10 journals container -->
+      <h2><a id="week10">Week 10</a></h2>
+      <div class="journalsDivsLeft">
+         <h3>Developing a Digital Identity</h3>
+         <p>This week’s lesson was useful as we learned how to create a navigation bar, which is essential for a website to have. It wasn’t too hard to understand, even though it can be confusing reading all these slides with all plain black text on them. I think it would be useful to have tags coloured differently just like some text editor software do automatically to make it neater, like Atom or Visual Studio Code.
+            This was another very short and simple lesson, which make me confirm my thoughts from Week 2, I feel like after 10 weeks we know things that could have been taught in 2 weeks, and that’s why I mostly learned HTML, CSS and JavaScript off a course on Udemy, it was much more time-efficient and I feel like I know a lot of things that my colleagues might have missed, as an example we did not talk about flexbox or grid at all, even though I included them in my website as I believe is the most practical way to align and distribute space within containers. There are many topics we did not look into, but as I am interested in Web Development, I did some research by myself.
+         </p>
+      </div>
+      <div class="journalsDivsRight">
+         <h3>Information Systems & Databases</h3>
+         <p>This week lecture was about database administration. We learned why concurrency control is essential, the nature and purpose of the transaction log, locking mechanisms and other concurrency protocols. We now know that a transaction is a sequence of database operations that need to be executed in their entirety or not at all. We also know it has ACID properties and the transaction log maintains a list of all changes so that database recovery is possible. We also learned that there’s various types of concurrency control.</p>
+      </div>
+      <div class="journalsDivsLeft">
+         <h3>User Experience Design</h3>
+         <p>This week, we talked about High-Fidelity Prototyping. Unlike the low-fi one, this prototype looks more like the final product and has way more functionality and it is software-based. It is also useful for selling ideas to people. One of the downsides of this, is that when the user is testing a high-fi prototype they might think they’re working with a complete system, and this could be damaging for its reputation.<br> This type of prototype involves compromising, which we can divide in two types; horizontal (provides a wide range of functions with little details) and vertical which provides many details with only a few functions.</p>
+      </div>
 
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>Today’s lesson was about Low-fidelity Prototype. Prototyping is very important for evaluating the design of an interactive product and to explore its suitability effectively. In UX Design a low-fidelity prototype can be a series of sketches, PowerPoint slide shows or cardboard mock-ups. Ideally, we want to approach a low-fidelity prototype to start with as it is quick, cheap and easily changed. <br>The lecturer showed us a video as an example, even though it was only meant as a guideline, it did feel a bit overwhelming seeing all those cardboard sketches, but I can imagine how much harder it would be to change it up if we did not start with this method.</p>
-              </div>
+      <!-- horizontal rule self closing tag -->
+      <hr>
 
-              <hr>
-              
-              <h2><a id="week10">Week 10</a></h2>
-
-              <div class="journalsDivsLeft">
-                <h3>Developing a Digital Identity</h3>
-                <p>This week’s lesson was useful as we learned how to create a navigation bar, which is essential for a website to have. It wasn’t too hard to understand, even though it can be confusing reading all these slides with all plain black text on them. I think it would be useful to have tags coloured differently just like some text editor software do automatically to make it neater, like Atom or Visual Studio Code.
-                  This was another very short and simple lesson, which make me confirm my thoughts from Week 2, I feel like after 10 weeks we know things that could have been taught in 2 weeks, and that’s why I mostly learned HTML, CSS and JavaScript off a course on Udemy, it was much more time-efficient and I feel like I know a lot of things that my colleagues might have missed, as an example we did not talk about flexbox or grid at all, even though I included them in my website as I believe is the most practical way to align and distribute space within containers. There are many topics we did not look into, but as I am interested in Web Development, I did some research by myself.
-                  </p>
-              </div>
-
-              <div class="journalsDivsRight">
-                <h3>Information Systems & Databases</h3>
-                <p>This week lecture was about database administration. We learned why concurrency control is essential, the nature and purpose of the transaction log, locking mechanisms and other concurrency protocols. We now know that a transaction is a sequence of database operations that need to be executed in their entirety or not at all. We also know it has ACID properties and the transaction log maintains a list of all changes so that database recovery is possible. We also learned that there’s various types of concurrency control.</p>
-              </div>
-
-              <div class="journalsDivsLeft">
-                <h3>User Experience Design</h3>
-                <p>This week, we talked about High-Fidelity Prototyping. Unlike the low-fi one, this prototype looks more like the final product and has way more functionality and it is software-based. It is also useful for selling ideas to people. One of the downsides of this, is that when the user is testing a high-fi prototype they might think they’re working with a complete system, and this could be damaging for its reputation.<br> This type of prototype involves compromising, which we can divide in two types; horizontal (provides a wide range of functions with little details) and vertical which provides many details with only a few functions.</p>
-              </div>
-
-              <hr>
-
-              <div class="footer">
-                <a class="footerLinks" href="https://github.com/noemibaglieri">GitHub</a>
-                <a class="footerLinks" href="https://twitter.com/qtMiraeth/">Twitter</a>
-                <a class="footerLinks" href="https://www.instagram.com/uwl_noemi">Instagram</a>
-                <p id="copyright"><em>© Noemi Baglieri, 2022</em></p>
-              </div>
-              <script src="scripts/index.js" charset="utf-8"></script>
-             
-                
-              </body>
-              </html>
-              
+      <!-- footer box -->
+      <div class="footer">
+         <!-- external anchor tags to my socials -->
+         <a class="footerLinks" href="https://github.com/noemibaglieri">GitHub</a>
+         <a class="footerLinks" href="https://twitter.com/qtMiraeth/">Twitter</a>
+         <a class="footerLinks" href="https://www.instagram.com/uwl_noemi">Instagram</a>
+         <!-- paragraph -->
+         <p id="copyright">&copy; Noemi Baglieri, 2022</p>
+      </div>
+      <!-- script tag to embed external javascript -->  
+      <script src="scripts/index.js"></script>
+   </body>
+</html>

@@ -1,165 +1,291 @@
+<!-- declaring document type -->
 <!DOCTYPE html>
+<!-- specifying language of the page en = English -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="This website is an assigment for Dr. Omar Al Hashimi, University of West London">
-    <meta name="keywords" content="HTML, CSS, JavaScript, UWL, Assignment">
-    <meta name="author" content="Noemi Baglieri">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
-    <title>Noemi's Assignment</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="images/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"/>
-  </head>
-    <body>
-        <button onclick="topFunction()" id="scrollToTop" title="Go to top"><img class="scrollButton" src="images/scrollButton.png" alt="Scroll to top"></button>
-        <div class="headerMobile">
-          <nav>
+   <!-- head element for metadata -->
+   <head>
+      <!-- all the text in this page is encoded using utf-8 encoding system -->
+      <meta charset="utf-8" />
+      <!-- brief summary of the page -->
+      <meta name="description" content="This website is an assigment for Dr. Omar Al Hashimi, University of West London">
+      <!-- meta keywords related to this page that help search engines understand the topic  -->
+      <meta name="keywords" content="HTML, CSS, JavaScript, UWL, Assignment">
+      <!-- defines author -->
+      <meta name="author" content="Noemi Baglieri">
+      <!-- instructions for the browser to control dimensions and scaling for responsive design -->
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+      <!-- gives title to this page -->
+      <title>Noemi's Assignment</title>
+      <!-- links external css file to style this page -->
+      <link rel="stylesheet" href="css/styles.css" />
+      <!-- sets favicon -->
+      <link rel="icon" href="images/favicon.png" />
+      <!-- lines 24 to 26 link specific fonts to this website -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet"/>
+   </head>
+
+   <!-- main element of the page -->
+   <body>
+
+      <!-- javascript function that allows users to scroll to the top with a button -->
+      <button onclick="topFunction()" id="scrollToTop" title="Go to top"><img class="scrollButton" src="images/scrollButton.png" alt="Scroll to top"></button>
+
+      <!-- navigation menu for mobile view -->
+      <div class="headerMobile">
+         <!-- nav tag to define set of navigation links -->
+         <nav>
+            <!-- unordered list to create anchor tags linked to other pages of the website -->
             <ul class="navLinksMobile">
-              <li><a href="index.html"><img class="mobileNavPics" src="images/home.png" alt="home button"></a></li>
-              <li><a href="journals.html"><img class="mobileNavPics" src="images/journals.png" alt="home button"></a></li>
-              <li><a href="curriculum-vitae.html"><img class="mobileNavPics" src="images/cv.png" alt="home button"></a></li>
-              <li><a href="contact-me.html"><img class="mobileNavPics" src="images/contactmepls.png" alt="home button"></a></li>
+               <!-- lines 42 to 45 items of the unordered list -->
+               <li><a href="index.html"><img class="mobileNavPics" src="images/home.png" alt="home button"></a></li>
+               <li><a href="journals.html"><img class="mobileNavPics" src="images/journals.png" alt="home button"></a></li>
+               <li><a href="curriculum-vitae.html"><img class="mobileNavPics" src="images/cv.png" alt="home button"></a></li>
+               <li><a href="contact-me.html"><img class="mobileNavPics" src="images/contactmepls.png" alt="home button"></a></li>
             </ul>
-          </nav>
-        </div>
-        <div class="header">
-          <nav>
+         </nav>
+      </div>
+
+      <!-- header box  -->
+      <div class="header">
+         <!-- nav tag to define set of navigation links -->
+         <nav>
+            <!-- unordered list to create anchor tags linked to other pages of the website -->
             <ul class="navLinks">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="journals.html">Journals <img class="arrowDown" src="images/dropdown-img.png" alt="arrow down"></a>
-                <ul>
-                  <li class="dropdownMenuItems"><a href="journals.html#week2">Week 2</a></li>
-                  <li class="dropdownMenuItems"><a href="journals.html#week3">Week 3</a></li>
-                  <li class="dropdownMenuItems"><a href="journals.html#week4">Week 4</a></li>
-                  <li class="dropdownMenuItems"><a href="journals.html#week5">Week 5</a></li>
-                  <li class="dropdownMenuItems"><a href="journals.html#week6">Week 6</a></li>
-                  <li class="dropdownMenuItems"><a href="journals.html#week7">Week 7</a></li>
-                  <li class="dropdownMenuItems"><a href="journals.html#week8">Week 8</a></li>
-                  <li class="dropdownMenuItems"><a href="journals.html#week9">Week 9</a></li> 
-                  <li class="dropdownMenuItems"><a href="journals.html#week10">Week 10</a></li>                
-                </ul></li>
-              <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
-              <li><a href="contact-me.html">Contact Me</a></li>
+               <!-- lines 57 to 74 items of the unordered list -->
+               <li><a href="index.html">Home</a></li>
+               <li><a href="journals.html">Journals <img class="arrowDown" src="images/dropdown-img.png" alt="arrow down"></a>
+                  <!-- unordered list inside another unordered list to create a menu under "journals" tab -->
+                  <ul>
+                     <!--  lines 62 to 70 items of the second unordered list-->
+                     <li class="dropdownMenuItems"><a href="journals.html#week2">Week 2</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week3">Week 3</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week4">Week 4</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week5">Week 5</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week6">Week 6</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week7">Week 7</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week8">Week 8</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week9">Week 9</a></li>
+                     <li class="dropdownMenuItems"><a href="journals.html#week10">Week 10</a></li>
+                  </ul>
+               </li>
+               <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+               <li><a href="contact-me.html">Contact Me</a></li>
             </ul>
-          </nav>
-        </div>
+         </nav>
+      </div>
+
+      <!-- dark grey stripe box  -->
       <div class="cvTop">
-        <div class="cvLeftCloudBox"><img class="cvLeftCloud" src="images/cloud.png" alt="Cloud"></div>
-        <div class="cvRightCloudBox"><img class="cvRightCloud" src="images/cloud.png" alt="Cloud"></div>
-        <h1>Curriculum <br> Vitae</h1> 
+         <!-- cloud images within boxes -->
+         <div class="cvLeftCloudBox"><img class="cvLeftCloud" src="images/cloud.png" alt="Cloud"></div>
+         <div class="cvRightCloudBox"><img class="cvRightCloud" src="images/cloud.png" alt="Cloud"></div>
+         <!-- header 1 element -->
+         <h1>Curriculum <br> Vitae</h1>
       </div>
+
+      <!-- header 2 element -->
       <h2 class="basicInfo">About Me</h2>
-        <div class="mobileInfoStyle">
+
+      <!-- about me information with use of flexbox -->
+      <!-- flexbox container -->
+      <div class="mobileInfoStyle">
+
+         <!-- flexbox item 1 -->
          <div class="nameCvBox">
-           <p><strong>Name:</strong>
-          <br>Noemi Baglieri</p>
-         </div> 
+            <p><strong>Name:</strong>
+               <br>Noemi Baglieri
+            </p>
+         </div>
+
+         <!-- flexbox item 2 -->
          <div class="dobCvBox">
-          <p><strong>Date of birth:</strong>
-         <br>14/01/1995</p>
-        </div> 
-        <div class="countryCvBox">
-          <p><strong>Nationality:</strong>
-         <br>Italian</p>
-        </div> 
-        <div class="emailCvBox">
-          <p><strong>E-mail:</strong>
-         <br>21514957@student.uwl.ac.uk</p>
-        </div> 
- 
-  </div>
+            <p><strong>Date of birth:</strong>
+               <br>14/01/1995
+            </p>
+         </div>
 
+         <!-- flexbox item 3 -->
+         <div class="countryCvBox">
+            <p><strong>Nationality:</strong>
+               <br>Italian
+            </p>
+         </div>
+
+         <!-- flexbox item 4 -->
+         <div class="emailCvBox">
+            <p><strong>E-mail:</strong>
+               <br>21514957@student.uwl.ac.uk
+            </p>
+         </div>
+      </div>
+
+      <!-- self closing horizontal rule tag -->
       <hr>
 
-      <div class="summaryDiv"><h2>Professional Summary</h2>
-      <p id="summary">I am a highly motivated individual with good communication skills who is able to relate to different types of people. Extremely organised and able to actively search for solutions to problems that others may find complex or difficult to evaluate.</p></div>
+      <!-- opening tag for professional summary box -->
+      <div class="summaryDiv">
+         <!-- header 2 element -->
+         <h2>Professional Summary</h2>
+         <!-- paragraph element with brief summary of my work-self -->
+         <p id="summary">I am a highly motivated individual with good communication skills who is able to relate to different
+            types of people. Extremely organised and able to actively search for solutions to problems that others may find
+            complex or difficult to evaluate.
+         </p>
+      </div>
+
+      <!-- self closing horizontal rule tag -->
       <hr>
+
+      <!-- CV table -->
       <table class="tableCv">
-        <colgroup>
-          <col class="columnSize">
-          <col>
-        </colgroup>
-        <tr>
-          <td class="tableRowCv">Tesco</td>
-          <td class="tableRowCv">Customer Assistant</td>
-        </tr>
-        <tr>
-          <td class="tableColumnCv">2019 - Present</td>
-          <ul>
+
+         <!-- assigning class to columns to change its style on css -->
+         <colgroup>
+            <col class="columnSize">
+            <col>
+         </colgroup>
+
+         <!-- table row 1 -->
+         <tr>
+            <!-- table cells for row 1 -->
+            <td class="tableRowCv">Tesco</td>
+            <td class="tableRowCv">Customer Assistant</td>
+         </tr>
+
+         <!-- table row 2 -->
+         <tr>
+            <!-- table cells for row 2 -->
+            <td class="tableColumnCv">2019 - Present</td>
             <td class="tableColumnCv">
-            
-            <li>Stocked shelves, unloaded trucks, placed daily product orders, and created sales displays</li>
-            <li>Exuded friendly, courteous with a positive attitude, and demonstrated professionalism.</li>
-            <li>Resolved customers queries and concerns in a proactive manner, leading to increase customer satisfaction.</li> 
-              <br> <p class="websites"><img class="cvPics" src="images/cv/position.png" alt="location"> London, UK - <a class="webClick" href="https://www.tesco.com/"><img class="cvPics" src="images/cv/website.png" alt="web"> Tesco.com </a></p>
+               <div class="tableIndent">
+                  <!-- unordered list inside div inside a cell -->
+                  <ul>
+                     <!-- unordered list items -->
+                     <li>Stocked shelves, unloaded trucks, placed daily product orders, and created sales displays</li>
+                     <li>Exuded friendly, courteous with a positive attitude, and demonstrated professionalism.</li>
+                     <li>Resolved customers queries and concerns in a proactive manner, leading to increase customer satisfaction.</li>
+                  </ul>
+               </div>
 
-          </ul>
-        </td>
-        </tr>
-        <tr>
-          <td class="tableRowCv">Airbus</td>
-          <td class="tableRowCv">Professional Video-game Player</td>
-        </tr>
-       <tr>
-        <td class="tableColumnCv">2017 - 2019</td>
-        <ul>
-          <td class="tableColumnCv">
-          <li>Exercised and practiced under the direction of a professional coach, in order to develop skills, and prepare for competitions.</li>
-          <li>Represented the team, performing such activities as meeting with members of the media, making speeches, or participating in charity events.</li>
-          <li>Assessed performance following competitions, identifying strengths and weaknesses, and making adjustments to improve future performance.</li>
-          <br> <p class="websites"><img class="cvPics" src="images/cv/position.png" alt="location"> Toulouse, FR - <a class="webClick" href="https://www.oob-team.com/"><img class="cvPics" src="images/cv/website.png" alt="web"> OOB Team</a></p>
-          </ul>
-          </td>
-       
-         
-       </tr>
-       <tr>
-        <td class="tableRowCv">Freelance</td>
-        <td class="tableRowCv">Translator & Editor</td>
-       </tr>
-       <tr>
-        <td class="tableColumnCv">2016 - 2018</td>
-        <td class="tableColumnCv">
-            
-          <li>Provided full English to Italian translation services.</li>
-          <li>Proofread written translated material to check words, grammar, and phrases.</li>
-          <li>Used software and bespoke applications to upload content.</li>
-          <br> <p class="websites"><img class="cvPics" src="images/cv/position.png" alt="location"> Anywhere in the world </p>
+               <!-- self closing break line -->
+               <br>
 
-        </ul>
-      </td>
-       </tr>
-       <tr>
-        <td class="tableRowCv">Morgan School</td>
-        <td class="tableRowCv">Receptionist</td>
-       </tr>
-       <tr>
-        <td class="tableColumnCv">2016 - 2017</td>
-        <td class="tableColumnCv">
-            
-          <li>Answered, screened, and forwarded incoming phone calls.</li>
-          <li>Updated calendars and scheduled meetings.</li>
-          <li>Filed and maintained invoices, customer records and other paperwork to facilitate ease of retrieval.</li>
-          <li>Carried out basic day-to-day administrative tasks to support smooth-running company operations.</li>
-          <br> <p class="websites"><img class="cvPics" src="images/cv/position.png" alt="location"> Latina, IT - <a class="webClick" href="https://www.morganschool.it/latina/"><img class="cvPics" src="images/cv/website.png" alt="web"> Morgan School</a></p>
+               <!-- external anchor tags inside a paragraph for information about workplace -->
+               <p class="websites"><img class="cvPics" src="images/cv/position.png" alt="location"> London, UK - <a
+                  class="webClick" href="https://www.tesco.com/"><img class="cvPics" src="images/cv/website.png" alt="web">
+                  Tesco.com </a>
+               </p>
+            </td>
+         </tr>
 
-        </ul>
-      </td>
-       </tr>
-       
-     </table>
-      </div>
+         <!-- table row 3 -->
+         <tr>
+            <!-- table cells for row 3 -->
+            <td class="tableRowCv">Airbus</td>
+            <td class="tableRowCv">Professional Video-game Player</td>
+         </tr>
+
+         <!-- table row 4 -->
+         <tr>
+            <!-- table cells for row 4 -->
+            <td class="tableColumnCv">2017 - 2019</td>
+            <td class="tableColumnCv">
+               <div class="tableIndent">
+                  <!-- unordered list inside div inside a cell -->
+                  <ul>
+                     <!-- unordered list items -->
+                     <li>Exercised and practiced under the direction of a professional coach, in order to develop skills, and prepare for competitions.</li>
+                     <li>Represented the team, performing such activities as meeting with members of the media, making speeches, or participating in charity events.</li>
+                     <li>Assessed performance following competitions, identifying strengths and weaknesses, and making adjustments to improve future performance.</li>
+                  </ul>
+               </div>
+
+               <!-- self closing break line -->
+               <br>
+
+               <!-- external anchor tags inside a paragraph for information about workplace -->
+               <p class="websites"><img class="cvPics" src="images/cv/position.png" alt="location"> Toulouse, FR - <a
+                  class="webClick" href="https://www.oob-team.com/"><img class="cvPics" src="images/cv/website.png"
+                  alt="web"> OOB Team</a></p>
+            </td>
+         </tr>
+
+         <!-- table row 5 -->
+         <tr>
+            <!-- table cells for row 5 -->
+            <td class="tableRowCv">Freelance</td>
+            <td class="tableRowCv">Translator & Editor</td>
+         </tr>
+
+         <!-- table row 6 -->
+         <tr>
+            <!-- table cells for row 6 -->
+            <td class="tableColumnCv">2016 - 2018</td>
+            <td class="tableColumnCv">
+               <div class="tableIndent">
+                  <!-- unordered list inside div inside a cell -->
+                  <ul>
+                     <!-- unordered list items -->
+                     <li>Provided full English to Italian translation services.</li>
+                     <li>Proofread written translated material to check words, grammar, and phrases.</li>
+                     <li>Used software and bespoke applications to upload content.</li>
+                  </ul>
+               </div>
+
+               <!-- self closing break line -->
+               <br>
+               <!-- external anchor tags inside a paragraph for information about workplace -->
+               <p class="websites"><img class="cvPics" src="images/cv/position.png" alt="location"> Anywhere in the world </p>
+            </td>
+         </tr>
+
+         <!-- table row 7 -->
+         <tr>
+            <!-- table cells for row 7 -->
+            <td class="tableRowCv">Morgan School</td>
+            <td class="tableRowCv">Receptionist</td>
+         </tr>
+
+         <!-- table row 8 -->
+         <tr>
+            <!-- table cells for row 8 -->
+            <td class="tableColumnCv">2016 - 2017</td>
+            <td class="tableColumnCv">
+               <div class="tableIndent">
+                  <!-- unordered list inside div inside a cell -->
+                  <ul>
+                     <!-- unordered list items -->
+                     <li>Answered, screened, and forwarded incoming phone calls.</li>
+                     <li>Updated calendars and scheduled meetings.</li>
+                     <li>Filed and maintained invoices, customer records and other paperwork to facilitate ease of retrieval.</li>
+                     <li>Carried out basic day-to-day administrative tasks to support smooth-running company operations.</li>
+                  </ul>
+               </div>
+
+               <!-- self closing break line -->
+               <br>
+
+               <!-- external anchor tags inside a paragraph for information about workplace -->
+               <p class="websites"><img class="cvPics" src="images/cv/position.png" alt="location"> Latina, IT - <a
+                  class="webClick" href="https://www.morganschool.it/latina/"><img class="cvPics" src="images/cv/website.png"
+                  alt="web"> Morgan School</a></p>
+            </td>
+         </tr>
+         <!-- end of table -->
+      </table>
+      
+      <!-- footer box -->
       <div class="footer">
-        <a class="footerLinks" href="https://github.com/noemibaglieri">GitHub</a>
-        <a class="footerLinks" href="https://twitter.com/qtMiraeth/">Twitter</a>
-        <a class="footerLinks" href="https://www.instagram.com/uwl_noemi">Instagram</a>
-        <p id="copyright"><em>© Noemi Baglieri, 2022</em></p>
+         <!-- external anchor tags to my socials -->
+         <a class="footerLinks" href="https://github.com/noemibaglieri">GitHub</a>
+         <a class="footerLinks" href="https://twitter.com/qtMiraeth/">Twitter</a>
+         <a class="footerLinks" href="https://www.instagram.com/uwl_noemi">Instagram</a>
+         <!-- paragraph  -->
+         <p id="copyright">&copy; Noemi Baglieri, 2022</p>
       </div>
-      <script src="scripts/index.js" charset="utf-8"></script>
-     
-        
-      </body>
-      </html>
+      <!-- script tag to embed external javascript -->  
+      <script src="scripts/index.js"></script>
+   </body>
+</html>
