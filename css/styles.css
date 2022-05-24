@@ -1,355 +1,315 @@
+/* Sets the body font family, height and text alignment */
 body, html {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; 
   height: 100vh;
   text-align: center;
 }
 
+/* Sets the universal margin and padding */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Sets all the Header1s colour, font family, font size and bottom margin */
 h1 {
   color: #eb839b;
   font-family: "Gochi Hand", cursive;
-  font-size: 937.5%;
-  margin-top: 0x;
+  font-size: 950%;
   margin-bottom: 0.1px;
 }
 
+/* Sets all the Header2s colour, font size and margin */
 h2 {
   color: #eb839b;
   font-size: 250%;
   margin: 1% 0;
 }
 
+/* Sets all the Header3s colour and font size */
 h3 {
   color: #e76583;
   font-size: 160%;
 }
 
+/* Sets all the Paragraphs colour and font size */
 p {
   color: rgb(58, 57, 57);
   font-size: 125%;
 }
 
+/* Sets all the Horizontal Rules colour, size, margin and style (dotted) */
 hr {
   border: dotted #f1dde2 6px;
   border-bottom: none;
   margin: 3rem 35%;
   }
 
-
+/* Sets all spans colour */
 span {
   color: rgb(58, 57, 57);
 }
 
+/* Sets all navigation links position and justifies them */
 nav {
   display: inline-block;
   justify-content: center;
 }
 
+/* Sets all anchor tags colour with no decoration (no underlines) */
 a {
   color: #eb839b;
   text-decoration: none;
 }
 
+/* Sets paragraphs bottom margin for specific classes */
 .skillRow p, .contactMe p, .info-table p, .journalsDivsLeft p, .journalsDivsRight p, .journalsSummary p {
   margin-bottom: 3%;
 }
 
 /* navigation menu styles */
-.header {
-  position: fixed;
-  box-shadow: 0 -6px 10px 5px rgb(58, 57, 57);
-  width: 100vw;
-  height: 3rem;
-  background-color: #ffffff;
+.header { /* selects "header" class */
+  position: fixed; /* fixes its position in the page */
+  box-shadow: 0 -6px 10px 5px rgb(58, 57, 57); /* creates a shadow around it */
+  width: 100vw; /* sets its width */
+  height: 3rem; /* sets its height */
+  background-color: #ffffff; /* sets the background colour */
 }
 
-.headerMobile {
-  display: none;
+.headerMobile { /* selects "headermMobile" class */
+  display: none; /* hides it */
 }
 
-.navLinks {
-  line-height: 0.6;
-  padding: 1.2rem 0;
-  background-color: none;
+.navLinks { /* selects unordered list "navLinks" class */
+  line-height: 0.6; /* sets the height of the line box */
+  padding: 1.2rem 0; /* sets top + bottom padding to 1.2rem and left + right to 0 */
 }
 
-.navLinks li {
-  display: inline-block;
-  margin: 0 15px;
-  background-color: none;
-  position: relative;
+.navLinks li { /* selects unorderest list "navLinks" class' items */
+  display: inline-block; /* display the items in line */
+  position: relative; /* sets the items position to relative */
+  margin: 0 15px; /* sets top + bottom margin to 0 and left + right margin to 15px */
 }
 
-.navLinks li a {
-  text-decoration: none;
-  padding: 5px 0;
-  position: relative;
-  background-color: none;
+.navLinks li a { /* selects the anchor tags in the items found in the class .navLinks */
+  padding: 5px 0; /* adds padding to these anchor tags */
+  position: relative; /* sets their position to relative */
 }
 
-.navLinks li a::after {
-  content: "";
-  background: #eb839b;
-  width: 0;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: width 0.5s;
+.navLinks li a::after { /* selects the anchor tags in the items found in the class .navLinks with the pseudo-element "after" */
+  content: ""; /* sets the content to empty so we can style it */
+  background: #eb839b; /* sets the colour of the content */
+  width: 0%; /* sets the width of the content */
+  height: 2px; /* sets the height of the content */
+  position: absolute; /* sets the position of the content */
+  bottom: 0; /* sets the position referring to "absolute" */
+  left: 0; /* sets the position referring to "absolute" */
+  transition: width 0.5s; /* transition time for the content to appear on screen */
 }
 
-.navLinks li a:hover::after {
-  width: 100%;
-  background-color: none;
+.navLinks li a:hover::after { /* selects the anchor tags in the items found in the class .navLinks with the pseudo-class "hover2 and pseudo-element "after" */
+  width: 100%; /* when the item is hovered, the width of the content will switch from 0% to 100% */
 }
 
-.navLinks li ul {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 30px 0 12px;
-  border-radius: 0px 0px 8px 8px;
+.navLinks li ul { /* selects the second unordered list which is placed inside an item of the first unordered list "journals" */
+  display: none; /* hides the list */
+  position: absolute; /* sets its position */
+  background-color: white; /* sets its background colour */
+  padding: 12px 0; /* adds 12px to top + botton padding and 0 to left + right padding */
+  border-radius: 0px 0px 8px 8px; /* makes edges rounded */
+  top: 10px; /* sets the position referring to "absolute" */
 }
 
-.navLinks li:hover ul {
-  display: block;
+.navLinks li:hover ul { /* selects the second unordered list with the pseudo-class "hover" */
+  display: block; /* changes display from none to block when hovered */
 }
 
-.dropdownMenuItems {
-  padding: 15px 0;
-  width: 90px;
-  border-radius: 5px;
+.dropdownMenuItems { /* selects the class "dropdownMenuItems" which are the items in the second unordered list */
+  padding: 15px 0; /* adds 15px padding to top + bottom and 0px to left + right */
+  width: 90px; /* sets its width */
+  border-radius: 5px; /* makes edges rounded */
 }
 
-.dropdownMenuItems:hover {
-  background-color: #f3f3f3;
+.dropdownMenuItems:hover { /* selects the class "dropdownMenuItems" with the pseudo-class "hover" */
+  background-color: #f3f3f3; /* changes its background colour upon hovering */
 }
 
-.arrowDown {
-  width: 10px;
+.arrowDown { /* selects the class "arrowDown" which is the img after "journals" */
+  width: 10px; /* sets its size */
 }
 
 /* mobile menu styles */
-@media (max-width: 700px) {
- .header {
-   display: none;
+@media (max-width: 700px) { /* when the screen is 700px or less, changes styles previously declared */
+ .header { /* selects the class .header */
+   display: none; /* changes its display to none */
   }
 
- .headerMobile {
-   display: block;
-   position: fixed;
-   box-shadow: 0 -6px 10px 5px rgb(58, 57, 57);
-   width: 100vw;
-   height: 4rem;
-   padding-bottom: 0.4rem;
-   background-color: #ffffff;
+ .headerMobile { /* selects the class .headerMobile */
+   display: block; /* changes its display from none to block */
+   position: fixed; /* gives it a fixed position */
+   box-shadow: 0 -6px 10px 5px rgb(58, 57, 57); /* creates a shadow around the .headerMobile box */
+   width: 100vw; /* sets its width */
+   height: 4rem; /* sets its height */
+   padding-bottom: 0.4rem; /* adds padding to the bottom only */
+   background-color: #ffffff; /* sets its colour */
  }
 
- .mobileNavPics  {
-   width: 2rem;
+ .mobileNavPics  { /* selects .mobileNavPics class which contains photos */
+   width: 2rem; /* changes the photos sizes */
   
 }
 
- .navLinksMobile {
-   line-height: 0.6;
-   padding: 1.2rem 0;
-   background-color: none;
+ .navLinksMobile { /* selects .navLinksMobile class */
+   line-height: 0.6; /* sets the height of the line box */
+   padding: 1.2rem 0; /* adds 1.2rem padding to top + bottom and 0 to left + right */
 }
-
- .navLinksMobile li {
-   display: inline-block;
-   margin: 0 15px;
-   background-color: none;
-   position: relative;
-}
-
- .navLinksMobile li a {
-   text-decoration: none;
-   padding: 5px 0;
-   position: relative;
-   background-color: none;
-}
-  .navLinksMobile li a::after {
-   content: "";
-   background: #eb839b;
-   width: 0;
-   height: 2px;
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   transition: width 0.5s;
-}
-
-  .navLinksMobile li a:hover::after {
-   width: 100%;
-   background-color: none;
-}
-
-  .navLinksMobile li ul {
-   display: none;
-   position: absolute;
-   background-color: white;
-   padding: 30px 0 12px;
-   border-radius: 0px 0px 8px 8px;
-}
-
-  .navLinksMobile li:hover ul {
-   display: block;
+ 
+ .navLinksMobile li { /* selects .navLinksMobile list items */
+   display: inline-block; /* sets its display */
+   margin: 0 15px; /* adds a margin of 0px to top + bottom and 15px to left + right */
 }
 }
 
 /* footer styles */
-  .footer {
-  background-color: rgb(58, 57, 57);
-  width: 100vw;
-  height: 170px;
-  margin-top: 2rem;
-  padding: auto;
+  .footer { /* selects .footer class */
+  background-color: rgb(58, 57, 57); /* sets its background colour */
+  width: 100%; /* sets its width */
+  height: 170px; /* sets its height */
+  margin-top: 2rem; /* adds 2rem to top margin only */
+  padding: auto; /* adds auto padding for all sides */
 }
 
-.footerLinks {
-  margin: 0 10px;
-  font-size: 120%;
-  line-height: 6;
+.footerLinks { /* selects .footerLinks class */
+  margin: 0 10px; /* sets margin to 0px for top + bottom and adds 10px to left + right */
+  font-size: 120%; /* sets new font size */
+  line-height: 6; /* sets the height of the line box */
 }
 
-.footerLinks:hover {
-  background-color: #f8e0c4;
+.footerLinks:hover { /* selects .footerLinks class with pseudo-class "hover" */
+  background-color: #f8e0c4; /* adds background colour to footerLinks upon hover */
 }
 
-.externalLinks:hover {
-  background-color: #f8e0c4;
+#copyright { /* selects #copyright id which is a paragraph */
+  line-height: 0; /* sets the height of the line box */
+  color: rgb(255, 255, 255); /* changes colour to white */
 }
 
-#copyright {
-  line-height: 0;
-  color: rgb(255, 255, 255);
-}
+@media (max-width: 280px) { /* when the screen is 280px or less, changes styles previously declared */
 
-@media (max-width: 280px) {
-
-  .footerLinks {
-    font-size: 100%;
+  .footerLinks { /* selects .footerLinks class */
+    font-size: 100%; /* updates its font size */
   }
 
-  #copyright {
-    line-height: 1.2;
-    font-size: 100%;
-    color: rgb(255, 255, 255);
+  #copyright { /* selects #copyright id */
+    line-height: 1.2; /* updates the height of the line box */
+    font-size: 100%; /* updates the font size */
   }
 
 }
 
 /* home page styles */
-.profile p {
-  margin-bottom: 2rem;
+.profile p { /* selects the paragraph inside .profile class */
+  margin-bottom: 2rem; /* sets its bottom margin */
 }
 
-.homeTop h1 {
-  font-size: 950%;
+.homeTop { /* selects .homeTop class */
+  width: 100%; /* sets its width */
+  height: 106%; /* sets its height */
+  overflow: hidden; /* hides any element that might be too big for this box */
+  background-color: rgb(58, 57, 57); /* sets background colour */
+  padding-top: 5rem; /* adds 5rem to top padding only */
 }
 
-.homeTop {
-  width: 100%;
-  height: 106%;
-  overflow: hidden;
-  background-color: rgb(58, 57, 57);
-  padding-top: 5rem;
+#subtitle { /* selects #subtitle id */
+  color: #eb839b; /* sets its colour */
+  line-height: 0; /* sets the height of the line box */
+  font-size: 1.2rem; /* sets font size */
+  margin-bottom: 8rem; /* adds 8rem to bottom margin only */
+}
+ 
+.leftCloudBox { /* selects .leftCloudBox class */
+  position: relative; /* sets its position */
 }
 
-#subtitle {
-  color: #eb839b;
-  line-height: 0;
-  font-size: 1.2rem;
-  margin-bottom: 8rem;
+.leftCloud { /* selects .leftCloud class */
+  position: absolute; /* sets its position */
+  right: 90.5rem; /* sets its position based on "absolute" */
+  bottom: 5rem; /* sets its position based on "absolute" */
+  width: 200px; /* sets its size */
 }
 
-.leftCloudBox {
-  position: relative;
+.rightCloudBox { /* selects .rightCloudBox class */
+  position: relative; /* sets its position */
 }
 
-.leftCloud {
-  position: absolute;
-  right: 90.5rem;
-  bottom: 5rem;
-  width: 200px;
+.rightCloud { /* selects .rightCloud class */
+  position: absolute; /* sets its position */
+  left: 90.5rem; /* sets its position based on "absolute" */
+  top: 30rem; /* sets its position based on "absolute" */
+  width: 200px; /* sets its size */
 }
 
-.rightCloudBox {
-  position: relative;
-}
-
-.rightCloud {
-  position: absolute;
-  left: 90.5rem;
-  top: 30rem;
-  width: 200px;
-}
-
-.treePic {
-  width: 950px;
-  max-width: 950px;
-  margin-bottom: 0;
+.treePic { /* selects .treePic class */
+  width: 950px; /* sets its size */
+  margin-bottom: 0; /* sets the bottom margin only */
 }
 
 
-.skillRow {
-  width: 50%;
-  margin: 40px auto 40px auto;
-  text-align: left;
+.skillRow { /* selects .skillRow class */
+  width: 50%; /* sets its width */
+  margin: 40px auto; /* adds 40px margin to top + bottom and sets auto margin for left + right */
+  text-align: left; /* aligns text to the left */
 }
 
-.noemiPic {
-  width: 12%;
-  margin-bottom: 1%;
+.noemiPic { /* selects .noemiPic class */
+  width: 12%; /* sets the size */
+  margin-bottom: 1%; /* adds bottom margin only */
 }
 
-.photoshopPic {
-  width: 15%;
-  float: left;
-  margin-right: 30px;
+.photoshopPic { /* selects .photoshopPic class */
+  width: 15%; /* sets the size */
+  float: left; /* places element to the left of its container */
+  margin-right: 30px; /* adds right margin only */
 }
 
-.javaPic {
-  width: 15%;
-  float: right;
-  margin-left: 30px;
+.javaPic { /* selects .javaPic class */
+  width: 15%; /* sets the size */
+  float: right; /* places element to the right of its container */
+  margin-left: 30px; /* adds left margin only */
 }
 
-.javaHead {
-  text-align: right;
+.javaHead { /* selects .javaHead class */
+  text-align: right; /* aligns text to the right */
 }
 
-.codingPic {
-  width: 15%;
-  float: left;
-  margin-right: 30px;
+.codingPic { /* selects .codingPic class */
+  width: 15%; /* sets the size */
+  float: left; /* places element to the left of its container */
+  margin-right: 30px; /* adds right margin only */
+}
+ 
+.contactMe p { /* selects any paragraph inside .contactMe class */
+  margin-bottom: 2rem; /* adds bottom margin only */
 }
 
-.contactMe p {
-  margin-bottom: 2rem;
+/* I created this button on https://www.css3buttongenerator.com/ */
+.contactMeButton { /* selects .contactMeButton class */
+  background: #eb839b; 
+  background-image: -webkit-linear-gradient(top, #eb839b, #e76583); 
+  background-image: -moz-linear-gradient(top, #eb839b, #e76583); 
+  background-image: -ms-linear-gradient(top, #eb839b, #e76583); 
+  background-image: -o-linear-gradient(top, #eb839b, #e76583); 
+  background-image: linear-gradient(to bottom, #eb839b, #e76583); 
+  -webkit-border-radius: 11; 
+  -moz-border-radius: 11; 
+  border-radius: 11px; 
+  color: #ffffff; 
+  font-size: 20px; 
+  padding: 10px 20px; 
 }
 
-.contactMeButton {
-  background: #eb839b;
-  background-image: -webkit-linear-gradient(top, #eb839b, #e76583);
-  background-image: -moz-linear-gradient(top, #eb839b, #e76583);
-  background-image: -ms-linear-gradient(top, #eb839b, #e76583);
-  background-image: -o-linear-gradient(top, #eb839b, #e76583);
-  background-image: linear-gradient(to bottom, #eb839b, #e76583);
-  -webkit-border-radius: 11;
-  -moz-border-radius: 11;
-  border-radius: 11px;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px;
-}
-
-.contactMeButton:hover {
+/* I created this button on https://www.css3buttongenerator.com/ */
+.contactMeButton:hover { /* selects .contactMeButton class with hover pseudo-class */
   background: #f7c3cf;
   background-image: -webkit-linear-gradient(top, #f7c3cf, #e76583);
   background-image: -moz-linear-gradient(top, #f7c3cf, #e76583);
@@ -359,657 +319,616 @@ a {
 }
 
 /* responsive design and media queries for home page */
-@media (max-width: 1555px) {
-  .leftCloud {
-    transition: 1s;
-    left: 5%;
+@media (max-width: 1555px) { /* when the screen is 1555px or less, changes styles previously declared */
+  .leftCloud { /* selects .leftCloud class */
+    transition: 1s; /* adds a transition for 1s */
+    left: 5%; /* updates position of the element */
   }
   .rightCloud {
-    transition: 1s;
-    left: 84%;
+    transition: 1s; /* adds a transition for 1s */
+    left: 84%; /* updates position of the element */
   }
 
-  .skillRow {
-  width: 80%;
-  }
-}
-
-@media (max-width: 1276px) {
-  .leftCloud, .rightCloud {
-    display: none;
+  .skillRow { /* selects .skillRow class */
+  width: 80%; /* updates width */
   }
 }
 
-@media (max-width: 1024px) {
-  .treePic {
-    width: 50%;
+@media (max-width: 1276px) { /* when the screen is 1276px or less, changes styles previously declared */
+  .leftCloud, .rightCloud { /* selects .leftCloud AND .rightCloud classes */
+    display: none; /* hides them */
   }
 }
 
-@media (max-width: 912px) {
-  .homeTop {
-    height: 70%;
-  }
-
-  .noemiPic {
-    width: 30%;
-  }
-
-  .profile p {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 0.5rem;
+@media (max-width: 1024px) { /* when the screen is 1024px or less, changes styles previously declared */
+  .treePic { /* selects .treePic class */
+    width: 50%; /* updates size */
   }
 }
 
-@media (max-width: 820px) {
-  .homeTop {
-    height: 23%;
+@media (max-width: 912px) { /* when the screen is 912px or less, changes styles previously declared */
+  .homeTop { /* selects .homeTop class */
+    height: 70%; /* updates height */
   }
 
-  .treePic {
-    display: none;
+  .noemiPic { /* selects .noemiPic class */
+    width: 30%; /* updates size */
   }
 
+  .profile p { /* selects any paragraphs inside .profile class */
+    width: 80%; /* updates width */
+    margin: auto; /* updates margin */
+    padding-bottom: 0.5rem; /* updates bottom padding only */
+  }
 }
 
-@media (max-width: 768px) {
-  .homeTop {
-    height: 28%;
+@media (max-width: 820px) { /* when the screen is 820px or less, changes styles previously declared */
+  .homeTop { /* selects .homeTop class */
+    height: 23%; /* updates height */
   }
-  .treePic {
-    display: none;
-  }
-  .profile p {
-    width: 50%;
 
+  .treePic { /* selects .treePic class */
+    display: none; /* hides element */
   }
 
 }
 
-@media (max-width: 700px) {
-  .homeTop {
-    height: 30%;
+@media (max-width: 768px) { /* when the screen is 768px or less, changes styles previously declared */
+  .homeTop { /* selects .homeTop class */
+    height: 28%; /* updates height */
   }
 
-  .treePic {
-   display: none;
+  .profile p { /* selects any paragraphs inside .profile class */
+    width: 50%; /* updates width */
+  }
+
+}
+
+@media (max-width: 700px) { /* when the screen is 700px or less, changes styles previously declared */
+  .homeTop { /* selects .homeTop class */
+    height: 20%; /* updates height */
+  }
+
+  .profile p { /* selects any paragraphs inside .profile class */
+    width: 80%; /* updates width */
+    margin: auto; /* updates margin for all sides */ 
+    padding-bottom: 0.5rem; /* updates bottom padding only */
+  }
+
+  .skills h2 { /* selects any Header2s inside .skills class */
+    margin-top: 1rem; /* updates top margin only */
+  }
+
+  .contactMe p { /* selects any paragraphs inside .contactMe class */
+    width: 80%; /* updates width */
+    margin: auto auto 1.5rem; /* updates margin to top + left + right to auto and 1.5rem to bottom */
+  }
+
+  hr { /* selects Horizontal Rules */
+    margin-top: 1rem; /* updates top margin */
+    margin-bottom: 1rem;  /* updates bottom margin */
+  }
+
+}
+
+@media (max-width: 616px) { /* when the screen is 616px or less, changes styles previously declared */
+  .headerMobile { /* selects .headerMobile class */
+    background-color: rgb(58, 57, 57); /* updates background colour */
+  }
+
+  .homeTop { /* selects .homeTop class */
+    display: none; /* hides element */
+  }
+
+  .profile { /* selects .profile class */
+  padding-top: 5rem; /* updated top padding only */
+  }
+}
+
+@media (max-width: 280px) { /* when the screen is 280px or less, changes styles previously declared */
+  .profile p { /* selects any paragraphs inside .profile class */
+   text-align: left; /* updates text alignment */
+   font-size: 100%; /* updates font size */
   } 
-
-  .noemiPic {
-    width: 30%;
-  }
-
-  .profile p {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 0.5rem;
-  }
-
-  .skills h2 {
-    margin-top: 1rem;
-  }
-
-  .contactMe p {
-    width: 80%;
-    margin: auto auto 1.5rem;
-  }
-
-  hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-}
-
-@media (max-width: 616px) {
-  .headerMobile {
-    background-color: rgb(58, 57, 57);
-  }
-
-  .homeTop {
-    display: none;
-  }
-
-  .profile {
-  padding-top: 5rem;
-  }
-
-  .treePic {
-    display: none;
-  }
-}
-@media (max-width: 280px) {
-  .profile p {
-   text-align: left;
-   font-size: 100%;
-  }
 }
 
 
 /* journals page styles */
-.journals {
-  width: 100%;
-  height: 55%;
-  overflow: hidden;
-  background-color: rgb(58, 57, 57);
-  padding-top: 5rem;
+.journals { /* selects .journals class */
+  width: 100%; /* sets width */
+  height: 55%; /* sets height */
+  overflow: hidden; /* hides any element that might be too big for this box */
+  background-color: rgb(58, 57, 57); /* sets background colour */
+  padding-top: 5rem; /* adds top padding only */
 }
 
-.journals p {
-  color: white;
+.journals p { /* selects any paragraphs inside .journals class */
+  color: white;  /* sets its colour */
 }
 
-.modulesContainer {
-  justify-content: center;
-  display: flex;
-  margin-top: 2.5%;
+.modulesContainer { /* selects .modulesContainer class */
+  display: flex; /* displays flexbox view */
+  justify-content: center; /* justifies flexbox content to center */
+  margin-top: 2.5%; /* adds top margin only */
 }
 
-.htmlImg, .databaseImg, .uxImg {
-  width: 20%;
+.htmlImg, .databaseImg, .uxImg { /* selects .hmtlImg AND .databaseImg AND .uxImg classes */
+  width: 20%; /* sets their size */
 }
 
-#weekView {
-   margin-bottom: 1rem;
+#weekView { /* selects #weekView id */
+   margin-bottom: 1rem; /* adds bottom margin only */
  }
 
-.weekNumbers {
-  width: 60px;
+.weekNumbers { /* selects .weekNumbers class */
+  width: 60px; /* sets its size */
 }
 
-.journalsContainer {
-  justify-content: center;
-  display: flex;
-  margin-bottom: 2%;
+.journalsContainer { /* selects .journalsContainer class */
+  display: flex; /* displays flexbox view */
+  justify-content: center; /* justifies flexbox content to center */
+  margin-bottom: 2%; /* adds bottom margin only */
 }
 
-.journalsDivsLeft {
-  text-align: left;
-  width: 70%;
-  margin: auto;
+.journalsDivsLeft { /* selects .journalsDivLeft class */
+  text-align: left; /* aligns text to the left */
+  width: 70%; /* sets width */
+  margin: auto; /* adds auto margin to all sides */
 }
 
-.journalsDivsRight {
-  text-align: right;
-  width: 70%;
-  margin: auto;
+.journalsDivsRight { /* selects .journalsDivLeft class */
+  text-align: right; /* aligns text to the right */
+  width: 70%; /* sets width */
+  margin: auto; /* adds auto margin to all sides */
 }
 
-.journalsImg {
-  width: 50px;
+.journalsImg { /* selects .journalsImg class */
+  width: 50px; /* sets width */
 }
 
 /* responsive design and media queries for journals page */
-@media (max-width: 1024px) {
-  .journals {
-    height: 75%;
+@media (max-width: 1024px) { /* when the screen is 1024px or less, changes styles previously declared */
+  .journals { /* selects .journals class */
+    height: 75%; /* updates its height */
   }
 }
-@media (max-width: 915px) {
-  .journals {
-    height: 45%;
+
+@media (max-width: 915px) { /* when the screen is 915px or less, changes styles previously declared */
+  .journals { /* selects .journals class */
+    height: 45%; /* updates its height */
   }
-  .journalsDivsLeft {
-    text-align: left;
-    width: 90%;
-    margin: auto;
+
+  .journalsDivsLeft { /* selects .journalsDivLeft class */
+    width: 90%; /* updates its width */
   }
   
-  .journalsDivsRight {
-    text-align: right;
-    width: 90%;
-    margin: auto;
-  }
-}
-@media (max-width: 912px) {
-  .journals {
-    height: 35%;
-  }
-
-}
-
-@media (max-width: 879px) {
-  .journals h1 {
-    font-size: 130px;
+  .journalsDivsRight { /* selects .journalsDivRight class */
+    width: 90%; /* updates its width */
   }
 }
 
-@media (max-width: 820px) {
- 
-  .journals {
-    height: 40%;
-  }
-  .journals h1 {
-    font-size: 120px;
-  }
-}
-  @media (max-width: 691px) {
-
-    .journals {
-      width: 100%;
-      height: 92%; 
-    }
-
-    .journals h1 {
-      display: none;
-    }
-
-.modulesContainer {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.modulesContainer > * {
-  margin: 2em 0;
-}
-
-.journalsSummary, .journalsDivsLeft, .journalsDivsRight {
-  width: 90%;
-  margin: auto;
-}
-  }
-@media (max-width: 616px) {
-.journals {
-  display: none;
-}
-
-.journalsSummary {
-  padding-top: 5rem;
-}
-}
-
-@media (max-width: 414px) {
-  #weekView, .summaryView {
-    width: 90%;
-    margin: 1rem;
-    text-align: left;
+@media (max-width: 912px) { /* when the screen is 912px or less, changes styles previously declared */
+  .journals { /* selects .journals class */
+    height: 35%; /* updates its height */
   }
 
-  .weekNumbers {
-    width: 10%;
+}
+
+@media (max-width: 879px) { /* when the screen is 879px or less, changes styles previously declared */
+  .journals h1 { /* selects any Headers1s in .journals class */
+    font-size: 130px; /* updates font size */
+  }
+}
+
+@media (max-width: 820px) { /* when the screen is 820px or less, changes styles previously declared */
+  .journals { /* selects .journals class */
+    height: 40%; /* updates its height */
+  }
+  .journals h1 { /* selects any Headers1s in .journals class */
+    font-size: 120px; /* updates font size */
+  }
+}
+
+  @media (max-width: 691px) { /* when the screen is 691px or less, changes styles previously declared */
+
+  .journals { /* selects .journals class */
+    height: 77%;  /* updates its height */
   }
 
-  .journalsImg {
-    width: 90%;
-    margin: auto;
+  .journals h1 { /* selects any Headers1s in .journals class */
+    display: none; /* hides element */
+  }
+
+.modulesContainer { /* selects .modulesContainer class */
+  flex-wrap: wrap; /* updates direction of the flexbox items displayed */
+}
+
+.modulesContainer > * { /* selects all properties of .modulesContainer */
+  margin: 2em 0; /* updates margin top + bottom to 2em and sets 0 to left + right */
+}
+
+.journalsSummary, .journalsDivsLeft, .journalsDivsRight { /* selects .journalsSummary AND .journalsDivsLeft AND .journalsDivsRight classes */
+  width: 90%; /* updates width */
+  margin: auto; /* sets auto margin to all sides */
+}
+  }
+@media (max-width: 616px) { /* when the screen is 616px or less, changes styles previously declared */
+.journals { /* selects .journals class */
+  display: none; /* hides element */
+}
+
+.journalsSummary { /* selects .journalsSummary class */
+  padding-top: 5rem; /* updates top padding only */
+}
+}
+
+@media (max-width: 414px) { /* when the screen is 414px or less, changes styles previously declared */
+  #weekView, .summaryView { /* selects #weekView id AND .summaryView class */
+    width: 90%; /* updates width */
+    margin: 1rem; /* updates margin on all sides */
+    text-align: left; /* aligns text to the left */
+  }
+
+  .weekNumbers { /* selects .weekNumbers class */
+    width: 10%; /* updates width */
+  }
+
+  .journalsImg { /* selects .journalsImg class */
+    width: 90%; /* updates width */
+    margin: auto; /* sets auto margin to all sides */
   }
 
 }
 
 /* curriculum page styles */
-.cvTop {
-  width: 100%;
-  height: 45%;
-  overflow: hidden;
-  background-color: rgb(58, 57, 57);
-  padding-top: 5%;
+.cvTop { /* selects .cvTop class */
+  width: 100%; /* sets width */
+  height: 45%; /* sets height */
+  overflow: hidden; /* hides any element that might be too big for this box */
+  background-color: rgb(58, 57, 57); /* sets background colour */
+  padding-top: 5%; /* adds top padding only */
 }
 
-.cvLeftCloudBox {
-  position: relative;
+.cvLeftCloudBox { /* selects .cvLeftCloudBox class */
+  position: relative; /* sets its position */
 }
 
-.cvLeftCloud {
-  position: absolute;
-  left: 5%;
-  top: -2rem;
-  width: 200px;
+.cvLeftCloud { /* selects .cvLeftCloud class */
+  position: absolute; /* sets its position */
+  left: 5%; /* sets its position based on "absolute" */
+  top: -2rem; /* sets its position based on "absolute" */
+  width: 200px; /* sets its width */
 }
 
-.cvRightCloudBox {
-  position: relative;
+.cvRightCloudBox { /* selects .cvRightCloudBox class */
+  position: relative; /* sets its position */
 }
 
-.cvRightCloud {
-  position: absolute;
-  left: 84%;
-  top: 8rem;
-  width: 200px;
+.cvRightCloud { /* selects .cvRightCloud class */
+  position: absolute; /* sets its position */
+  left: 84%; /* sets its position based on "absolute" */
+  top: 8rem; /* sets its position based on "absolute" */
+  width: 200px; /* sets its width */
 }
 
-.mobileInfoStyle {
-  display: flex;
-  flex-direction: row;
-  gap: 5rem;
-  text-align: left;
-  justify-content: center;
+.mobileInfoStyle { /* selects .mobileInfoStyle class */
+  display: flex; /* displays flexbox view */
+  flex-direction: row; /* sets items to row view */
+  gap: 5rem; /* assigns gap to the items */
+  text-align: left; /* aligna text to the left */
+  justify-content: center; /* justify items to the center */
 }
 
-.tableColumns {
-  width: 900px;
+.tableColumns { /* selects .tableColumn class */
+  width: 900px; /* sets width */
 }
 
-#summary {
-  width: 50%;
-  margin: 40px auto 40px auto;
+#summary { /* selects #summary id */
+  width: 50%; /* sets its width */
+  margin: 40px auto; /* sets top + bottom margin to 40 px and left + right auto margin */
 }
 
-.tableCv {
-  text-align: left;
-  text-indent: 1%;
-  justify-content: center;
-  margin: 2% 25%;
+.tableCv { /* selects .tableCv class */
+  text-align: left; /* aligns text to the left */
+  text-indent: 1%; /* indents the first line for each block of text inside the table */
+  margin: 2% 25%; /* adds 2% margin to top + bottom and 25% margin to left + right */
 }
 
-.columnSize {
-  width: 150px;
+.columnSize { /* selects .columnSize class */
+  width: 150px; /* fixes the left column to 150px in width */
 }
 
-.tableRowCv {
-  color: #e76583;
-  font-weight: bold;
+.tableRowCv { /* selects .tableRowCv class */
+  color: #e76583; /* sets rows text colour */
+  font-weight: bold; /* adds bold style to the text */
 }
 
-.tableColumnCv {
-  background-color: #f7c3cf;
-  margin-left: 20%;
-  vertical-align: top;
+.tableColumnCv { /* selects .tableColumnCv class */
+  background-color: #f7c3cf; /* sets background colour to the columns */
+  margin-left: 20%; /* adds left margin only */
+  vertical-align: top; /* pushes the text inside the columns at the top */
 }
 
-.cvPics {
-  width: 2%;
+.cvPics { /* selects .cvPics class */
+  width: 2%; /* sets size */
 }
 
-.websites {
-  font-size: 100%;
-  margin-bottom: 1%;
-  font-weight: bold;
-  margin-right: 8%;
+.websites { /* selects .websites class */
+  font-size: 100%; /* sets the font size */
+  margin-bottom: 1%; /* adds bottom margin  */
+  margin-right: 8%; /* adds right margin */
+  font-weight: bold; /* adds bold style to text */
+  
 }
 
-.webClick:hover {
-  color: white;
+.webClick:hover { /* selects .webClick class with "hover" pseudo-class*/
+  color: white; /* text turns white upon hovering */
 }
 
 /* responsive design and media queries for curriculum vitae page */
-@media (max-width: 1515px) {
-  .cvLeftCloud {
-     
-    left: 5%;
+@media (max-width: 1515px) { /* when the screen is 1515px or less, changes styles previously declared */
+  .cvLeftCloud { /* selects .cvLeftCloud class */
+    left: 5%; /* updates position of the element */
   }
-  .cvRightCloud {
-     
-    left: 84%;
+  .cvRightCloud { /* selects .cvRightCloud class */
+    left: 84%; /* updates position of the element */
   }
 
 }
-@media (max-width: 1144px) {
-  .cvLeftCloud, .cvRightCloud {
-    display: none;
+@media (max-width: 1144px) { /* when the screen is 1144px or less, changes styles previously declared */
+  .cvLeftCloud, .cvRightCloud { /* selects .cvLeftCloud AND .cvRightCloud classes */
+    display: none; /* hides elements */
   }
 
-.mobileInfoStyle {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  gap: 2rem;
-
+.mobileInfoStyle { /* selects .mobileInfoStyle */
+  flex-direction: column; /* updates direction of flexbox from row to column */
+  gap: 2rem; /* assign gap to elements */
+  text-align: center; /* aligns text to center */
 }
-}
-@media (max-width: 1024px) {
-  .cvTop {
-    height: 30%;
-  }
-}
-@media (max-width: 912px) {
-
-.tableCv {
-  margin: 2% auto;
 }
 
-#summary {
-  width: 80%;
+@media (max-width: 1024px) { /* when the screen is 1024px or less, changes styles previously declared */
+  .cvTop { /* selects .cvTop class */
+    height: 30%; /* updates height */
   }
 }
 
-@media (max-width: 866px) {
-  .cvTop {
-    height: 14%;
+@media (max-width: 912px) { /* when the screen is 912px or less, changes styles previously declared */
+
+.tableCv { /* selects .tableCv class */
+  margin: 2% auto; /* updates  margin to 2% for top + bottom, and auto for left + right */
+}
+
+#summary { /* selects #summary id */
+  width: 80%; /* updates the box width */
+  }
+}
+
+@media (max-width: 866px) { /* when the screen is 866px or less, changes styles previously declared */
+.cvTop { /* selects .cvTop class */
+    height: 14%; /* updates height */
   }
 
 }
 
-@media (max-width: 700px) {
-  .cvTop {
-    padding-top: 14%;
+@media (max-width: 700px) { /* when the screen is 700px or less, changes styles previously declared */
+.cvTop { /* selects .cvTop class */
+    padding-top: 14%; /* updates top padding only */
+  }
+}
+
+@media (max-width: 616px) { /* when the screen is 616px or less, changes styles previously declared */
+.cvTop { /* selects .cvTop class */
+    display: none; /* hides element */
   }
 
-  @media (max-width: 616px) {
-    .cvTop {
-      display: none;
-    }
-    .basicInfo {
-      font-size: 30px;
-      padding-top: 90px;
+.basicInfo {  /* selects .basicInfo class */
+  font-size: 30px; /* updates font size */
+  padding-top: 90px; /* updates top padding only */
  }
-
-  }
-  @media (max-width: 375px) {
-
-   .basicInfo {
-     font-size: 30px;
-     padding-top: 90px;
-}
-}
 }
 
 /* contact me page styles */
-.contactMeTop {
-  width: 100vw;
-  height: 600px;
-  background-color: rgb(58, 57, 57);
-  padding-top: 5rem;
+.contactMeTop { /* selects .contactMeTop class */
+  width: 100%; /* sets width */
+  height: 600px; /* sets height */
+  background-color: rgb(58, 57, 57); /* sets background colour */
+  padding-top: 5rem; /* sets top padding only */
 }
 
-.contactMeCloudsBox {
-  position: relative;
+.contactMeCloudsBox { /* selects .contactMeCloudsBox class */
+  position: relative; /* sets position */
 }
 
-.contactMeLeftCloud {
-  position: absolute;
-  left: 20%;
-  top: 10%;
-  width: 11%;
+.contactMeLeftCloud { /* selects .contactMeLeftCloud class */
+  position: absolute; /* sets position */
+  left: 20%; /* sets its position based on "absolute" */
+  top: 10%; /* sets its position based on "absolute" */
+  width: 11%; /* sets size */
 }
 
-.contactMeRightCloud {
-  position: absolute;
-  left: 70%;
-  top: 16rem;
-  width: 11%;
+.contactMeRightCloud { /* selects .contactMeRightCloud class */
+  position: absolute; /* sets position */
+  left: 70%; /* sets its position based on "absolute" */
+  top: 16rem; /* sets its position based on "absolute" */
+  width: 11%; /* sets size */
 }
 
-.formStyle {
-  display: inline-block;
-  width: fit-content;
+.formStyle { /* selects .formStyle class */
+  display: inline-block; /* display the items in line */ 
+  width: fit-content; /* sets width to available space never less than min-content and never more than max-content */
 }
 
-.nameAndSurname, .emailAndPhoneNumber, .dateAndCountry {
-  display: flex;
-  gap: 1rem;
+.nameAndSurname, .emailAndPhoneNumber, .dateAndCountry { /* selects .nameAndSurname AND .emailAndPhoneNumber AND .dateAndCountry classes */
+  display: flex; /* sets flexbox display */
+  gap: 1rem; /* sets elements spacing */
 }
 
-.messageArea {
-  display: flex;
-  flex-direction: column;
+.messageArea { /* selects .messageArea */
+  display: flex; /* sets flexbox display */
+  flex-direction: column; /* sets flexbox display to column */
 }
 
-.messageStyle {
-  background-color: #eb6786;
-  width: 500px;
-  height: 200px;
-  margin: 5px;
-  border-radius: 15px;
-  resize: none;
-  border: 2px solid rgb(58, 57, 57);
-  padding: 1rem;
+.messageStyle { /* selects .messageStyle */
+  background-color: #eb6786; /* sets background colour */
+  width: 500px; /* sets box width */
+  height: 200px; /* sets box height */
+  margin: 5px; /* sets margin to 5px on all sides */
+  border-radius: 15px; /* makes edges rounded */
+  resize: none; /* locks textarea user resize */
+  border: 2px solid rgb(58, 57, 57); /* sets a border around the box */
+  padding: 1rem; /* adds padding on all sides */
 }
 
-.messageStyle::placeholder {
-  padding: 0;
+.messageStyle::placeholder { /* selects .messageStyle class with pseudo-element placeholder */
+  padding: 0; /* it allows text input to match placeholder position */
 }
 
-.nameAndSurnameStyle {
-  background-color: #eaa9b8;
-  width: 100%;
-  height: 50px;
-  margin: 5px;
-  padding: 0 2%;
-  border-radius: 15px;
-  border: 2px solid rgb(58, 57, 57);
-  transition: 0.3s border-color;
+.nameAndSurnameStyle { /* selects .nameAndSurnameStyle class */
+  background-color: #eaa9b8; /* sets background colour */
+  width: 100%; /* sets box width */
+  height: 50px; /* sets box height */
+  margin: 5px; /* adds margin to 5px on all sides */
+  padding: 0 2%; /* adjust padding to 0 for top + bottom and adds 2% for left + right */
+  border-radius: 15px; /* makes edges rounded */
+  border: 2px solid rgb(58, 57, 57); /* sets a border around the box */ 
 }
 
-.nameAndSurnameStyle::placeholder {
-  padding: 0;
+.nameAndSurnameStyle::placeholder { /* selects .nameAndSurnameStyle class with pseudo-element placeholder */
+  padding: 0; /* it allows text input to match placeholder position */
 }
 
-.emailAndPhoneNumberStyle {
-  background-color: #e98ea3;
-  width: 100%;
-  height: 50px;
-  margin: 5px;
-  padding: 0 2%;
-  border-radius: 15px;
-  border: 2px solid rgb(58, 57, 57);
+.emailAndPhoneNumberStyle { /* selects .emailAndPhoneNumberStyle class */
+  background-color: #e98ea3; /* sets background colour */
+  width: 100%; /* sets box width */
+  height: 50px; /* sets box height */
+  margin: 5px; /* adds margin to 5px on all sides */
+  padding: 0 2%; /* adjust padding to 0 for top + bottom and adds 2% for left + right */
+  border-radius: 15px; /* makes edges rounded */
+  border: 2px solid rgb(58, 57, 57); /* sets a border around the box */ 
 }
 
-.emailAndPhoneNumberStyle::placeholder {
-  padding: 0;
+.emailAndPhoneNumberStyle::placeholder { /* selects .emailAndPhoneNumberStyle class with pseudo-element placeholder */
+  padding: 0; /* it allows text input to match placeholder position */
 }
 
-.dateAndCountryStyle {
-  background-color: #e77791;
-  width: 100%;
-  height: 50px;
-  margin: 5px;
-  padding: 0 1%;
-  border-radius: 15px;
-  border: 2px solid rgb(58, 57, 57);
+.dateAndCountryStyle { /* selects .dateAndCountryStyle class */
+  background-color: #e77791; /* sets background colour */
+  width: 100%; /* sets box width */
+  height: 50px; /* sets box height */
+  margin: 5px; /* adds margin to 5px on all sides */
+  padding: 0 1%; /* adjust padding to 0 for top + bottom and adds 1% for left + right */
+  border-radius: 15px; /* makes edges rounded */
+  border: 2px solid rgb(58, 57, 57); /* sets a border around the box */ 
 }
 
-.countryStyle {
-  background-color: #e77791;
-  width: 103% !important;
-  height: 54px;
-  margin: 5px;
-  padding: 0 1%;
-  border-radius: 15px;
-  border: 2px solid rgb(58, 57, 57);
+.countryStyle { /* selects .countryStyle class */
+  background-color: #e77791; /* sets background colour */
+  width: 103% !important; /* sets box width - used !important rule to override any previous styling */
+  height: 54px; /* sets box height */
+  margin: 5px; /* adds margin to 5px on all sides */
+  padding: 0 1%; /* adjust padding to 0 for top + bottom and adds 1% for left + right */
+  border-radius: 15px; /* makes edges rounded */
+  border: 2px solid rgb(58, 57, 57); /* sets a border around the box */
 }
 
-.submitStyle {
-  background-color: #e95577;
-  width: 116px;
-  height: 50px;
-  margin: 5px;
-  border-radius: 25px;
-  border: 2px solid rgb(58, 57, 57);
-  place-self: center;
+.submitStyle { /* selects .submitStyle class */
+  background-color: #e95577; /* sets background colour */
+  width: 116px; /* sets box width */
+  height: 50px; /* sets box height */
+  margin: 5px; /* adds margin to 5px on all sides */
+  border-radius: 25px; /* makes edges rounded */
+  border: none; /* removes border */
+  place-self: center; /* places this element in the center of the flexbox */
 }
 
-.submitStyle:hover {
-  background-color: #c94765;
-  cursor: pointer;
-  width: 116px;
-  height: 50px;
-  margin: 5px;
-  border-radius: 25px;
-  border: 2px solid rgb(58, 57, 57);
+.submitStyle:hover { /* selects .submitStyle class with hover pseudo-class */
+  background-color: #c94765; /* changes background colour upon hovering*/
+  cursor: pointer; /* changes pointer type upon hovering */
+  border: none; /* remover border */
 }
 
-::placeholder {
-  color: rgb(58, 57, 57);
-  padding: 3%;
+::placeholder { /* selects pseudo-class placeholder */
+  color: rgb(58, 57, 57); /* sets its colour */
+  padding: 3%; /* adds padding to each side*/
 }
 
-input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:hover {
-  outline: none;
-  border: 2px solid rgb(255, 255, 255);
+input:focus, input:hover, textarea:focus, textarea:hover, select:focus, select:hover { /* selects input, textarea and select with focus and hover pseudo-classes */
+  outline: none; /* removes standard outline */
+  border: 2px solid rgb(255, 255, 255); /* adds border when hovered or focused (clicked or tapped or selected with key "tab" on keyboard) */
 }
 
-.errorMessage {
-  border: 2px solid red;
+.errorMessage { /* selects .errorMessage class */
+  border: 2px solid red; /* sets border size and colour */
 }
 
-.errorMessage::placeholder {
-  color: red;
+.errorMessage::placeholder { /* selects .errorMessage class with placeholder pseudo-element*/
+  color: red; /* sets colour */
 }
 
-.map {
-  padding-top: 5rem;
-  overflow-x: hidden;
+.map { /* selects .map class */
+  padding-top: 5rem; /* adds top padding only */
+  overflow-x: hidden; /* hides overflow of the map */
 }
 
 /* responsive design and media queries for contact me page */
-@media (max-width: 1555px) {
-  .contactMeLeftCloud {
-    transition: 1s;
-    left: 5%;
-  }
-  .contactMeRightCloud {
-    transition: 1s;
-    left: 84%;
+@media (max-width: 1555px) { /* when the screen is 1555px or less, changes styles previously declared */
+.contactMeLeftCloud { /* selects .contactMeLeftCloud class */
+  transition: 1s; /* adds 1s transition */
+  left: 5%; /* updates element position */
+}
+.contactMeRightCloud { /* selects .contactMeRightCloud class */
+  transition: 1s; /* adds 1s transition */
+  left: 84%; /* updates element position */
+}
+}
+
+@media (max-width: 810px) { /* when the screen is 810px or less, changes styles previously declared */
+  .contactMeLeftCloud, .contactMeRightCloud { /* selects .contactMeLeftCloud and .contactMeRightCloud classes */
+    display: none; /* hides elements */
   }
 }
 
-@media (max-width: 810px) {
-  .contactMeLeftCloud,
-  .contactMeRightCloud {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .contactMeTop {
-    height: 800px;
+@media (max-width: 768px) { /* when the screen is 768px or less, changes styles previously declared */
+ .contactMeTop { /* selects .contactMeTop class */
+    height: 800px; /* updates height */
   }
 
-  .nameAndSurnameStyle,
-  .emailAndPhoneNumberStyle,
-  .dateAndCountryStyle,
-  .countryStyle,
-  .messageStyle {
-    width: auto !important;
+ .nameAndSurnameStyle, .emailAndPhoneNumberStyle, .dateAndCountryStyle, .countryStyle, .messageStyle { /* selects all the classes mentioned */
+    width: auto !important; /* sets auto width - used !important rule to override any previous styling */
   }
 
-  .formStyle {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  .formStyle { /* selects .formStyle class */
+    display: flex; /* displays flexbox */
+    flex-direction: column; /* changes flexbox direction */
+    width: 100%; /* updates width */
   }
 
-  .contactMeTop h3 {
-    margin: 0;
-    padding-left: 10px;
-    float: left;
+  .contactMeTop h3 { /* selects all the Header3s in .contactMeTop class */
+    margin: 0; /* updates margin to 0 on all sides */
+    padding-left: 10px; /* updates left padding only */
+    float: left; /* positions element top left */
   }
-  .nameAndSurname,
-  .emailAndPhoneNumber,
-  .dateAndCountry,
-  .messageArea {
-    flex-direction: column;
-    gap: 0;
-    padding-right: 1rem;
+
+  .nameAndSurname, .emailAndPhoneNumber, .dateAndCountry, .messageArea { /* selects all the classes mentioned */
+    flex-direction: column; /* changes direction to column */
+    gap: 0; /* assign gap to the elements */
+    padding-right: 1rem; /* selects all the classes mentioned */
   }
 }
 
 /* scroll button styles */
 #scrollToTop {
-  display: none;
-  position: fixed; /* Fixed/sticky position */
+  display: none; /* hides it unless user scrolls (combined with index.js) */
+  position: fixed; /* Fixes position */
   bottom: 10px; /* Place the button at the bottom of the page */
-  right: -13rem; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  background: none;
-  border: none;
+  right: -13rem; /* Place the button all the way to the right of the page */
+  z-index: 99; /* makes sure it does not get overlapped by other elements*/
+  cursor: pointer; /* adds mouse pointer when hovered */
+  background: none; /* removes background */
+  border: none; /* removes border */
 }
 
 .scrollButton {
-  width: 10%;
+  width: 10%; /* sets size */
 }

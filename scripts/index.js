@@ -35,10 +35,16 @@ const message = document.getElementById("message");
 const form = document.getElementById("form");
 
 form.addEventListener("submit", (e) => {
+  userName.classList.remove("errorMessage");
+  phoneNumber.classList.remove("errorMessage");
+  email.classList.remove("errorMessage");
+  message.classList.remove("errorMessage");
   e.preventDefault();
+
   if (!userName.value.trim()) {
     userName.placeholder = "Please, fill out your name.";
     userName.classList.add("errorMessage");
+    return;
   }
 
   if (!email.value && !phoneNumber.value) {
@@ -46,10 +52,15 @@ form.addEventListener("submit", (e) => {
     phoneNumber.placeholder = "Please enter an email or a phone #";
     email.classList.add("errorMessage");
     phoneNumber.classList.add("errorMessage");
+    return;
   }
 
   if (!message.value) {
     message.placeholder = "You didn't write any message!";
     message.classList.add("errorMessage");
+    return;
   }
+
+  form.submit();
 });
+
