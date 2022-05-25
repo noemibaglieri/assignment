@@ -116,9 +116,9 @@ a {
   display: none; /* hides the list */
   position: absolute; /* sets its position */
   background-color: white; /* sets its background colour */
-  padding: 18px 0; /* adds 12px to top + botton padding and 0 to left + right padding */
+  padding: 16px 0; /* adds 12px to top + botton padding and 0 to left + right padding */
   border-radius: 0px 0px 8px 8px; /* makes edges rounded */
-
+  top: 20px; /* sets the position referring to "absolute" */
 }
 
 .navLinks li:hover ul { /* selects the second unordered list with the pseudo-class "hover" */
