@@ -74,6 +74,7 @@ a {
   width: 100vw; /* sets its width */
   height: 3rem; /* sets its height */
   background-color: #ffffff; /* sets the background colour */
+  z-index: 99;
 }
 
 .headerMobile { /* selects "headermMobile" class */
@@ -115,9 +116,9 @@ a {
   display: none; /* hides the list */
   position: absolute; /* sets its position */
   background-color: white; /* sets its background colour */
-  padding: 12px 0; /* adds 12px to top + botton padding and 0 to left + right padding */
+  padding: 18px 0; /* adds 12px to top + botton padding and 0 to left + right padding */
   border-radius: 0px 0px 8px 8px; /* makes edges rounded */
-  top: 10px; /* sets the position referring to "absolute" */
+
 }
 
 .navLinks li:hover ul { /* selects the second unordered list with the pseudo-class "hover" */
